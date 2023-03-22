@@ -1,6 +1,5 @@
 export function Intro() {
   return (
-    <>
       <section className="intro-layout">
         <div>
           <h3 className="green">Hi, my name is</h3>
@@ -13,6 +12,5 @@ export function Intro() {
           <button>Send me a message!</button>
         </div>
       </section>
-    </>
   );
 }

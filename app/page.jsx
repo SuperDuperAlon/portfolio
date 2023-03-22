@@ -11,10 +11,10 @@ export default function Home() {
     <>
       {/* <Header /> */}
       <section className="index-layout">
-        <Intro />
-        {/* <About />
+        {/* <Intro /> */}
+        {/* <About /> */}
         <Expirience />
-        <Projects />
+        {/* <Projects />
         <Contact /> */}
       </section>
     </>
