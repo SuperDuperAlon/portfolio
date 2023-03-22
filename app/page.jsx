@@ -5,6 +5,7 @@ import { Expirience } from "./cmps/expirience";
 import { Intro } from "./cmps/intro";
 import { Header } from "./cmps/header";
 import { Projects } from "./cmps/projects";
+import { Footer } from "./cmps/footer";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Projects />
         <Contact />
       </section>
+      <Footer />
     </>
   );
 }
