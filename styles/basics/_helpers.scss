@@ -17,6 +17,10 @@
   font-size: clamp(40px, 8vw, 80px)
 }
 
+.capitalize {
+  text-transform: capitalize;
+}
+
 // Colors
 .slate {
   color: $slate;

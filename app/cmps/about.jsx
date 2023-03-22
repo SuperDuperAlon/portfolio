@@ -1,17 +1,49 @@
+import Image from "next/image";
+import alon from "../../public/assets/alon.jpg";
+
 export function About() {
-    const skills = ['Javascript (ES6+)', 'React', 'Node.js', 'Sass', 'MongoDb']
+  const skills = ["Javascript (ES6+)", "React", "Node.js", "Sass", "MongoDb"];
   return (
-    <section className="about-layout">
+    <section className="about-layout" id="about">
       <div>
-        <h1 className="green">About Me</h1>
-        <p className="slate">
-       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex deleniti unde modi magni atque quos nihil minus autem, qui fugiat quis in fuga soluta culpa praesentium odio a repellendus reprehenderit, vel illo! Esse eveniet nam porro unde, laborum placeat. Officiis pariatur et enim dignissimos sed tempora, nobis fugit! Fugiat aliquid necessitatibus quas perferendis quis dolorum fugit ipsam voluptate qui eaque aliquam ipsa incidunt, possimus nam voluptates ab nemo! Neque id quis sapiente distinctio harum placeat rerum fugiat, libero repudiandae molestias magnam aliquam esse eveniet labore voluptas necessitatibus accusamus ea velit fuga similique quas officia aliquid debitis veritatis. Enim, soluta nostrum exercitationem natus ratione rerum voluptate, pariatur dolorem voluptatem corrupti, accusamus voluptas recusandae necessitatibus quas perspiciatis sequi vel doloremque quidem quae temporibus. Sunt quo aperiam harum quaerat quas maiores error iusto blanditiis repellat dolore, laborum assumenda minus eveniet, tenetur veritatis a dolores consequuntur tempora. Explicabo ullam nihil id hic natus illum obcaecati perferendis molestias vitae minima qui, in, eos rerum ex alias consequatur enim ratione ipsum. Delectus, repellendus est maiores molestiae repudiandae minima temporibus omnis voluptatum debitis ut quidem blanditiis veritatis et. Molestias atque veritatis alias exercitationem quod corporis doloremque sapiente perspiciatis, earum iusto facere nam ea totam culpa incidunt eveniet, natus impedit quas fugiat sequi ipsam officia. Eos, tenetur sint rem porro excepturi ea at, dolorum obcaecati optio hic voluptates sed consequuntur quas placeat eligendi architecto quia ab? Reprehenderit facere illum optio officiis vel excepturi nesciunt suscipit est nihil, velit aliquam porro laborum quidem, aut blanditiis facilis quae veritatis quo ducimus aspernatur, dolorem id dolore deserunt. Praesentium, velit repellat natus labore similique dolore. Commodi voluptatum aspernatur reiciendis. Facilis maiores sapiente assumenda, alias, recusandae commodi, necessitatibus veniam reiciendis placeat illum quaerat explicabo nam. Fuga earum beatae rerum illum officiis deserunt provident commodi. Laborum minima officiis illo voluptatibus fugiat dolore quae dignissimos.
-        </p>
-        <ul>
-            {skills.map((skill) => {
-              return <li className="green" key={skill.idx}>{skill}</li>
-            })}
-        </ul>
+        <h1 className="section-header">About Me</h1>
+        <div className="about-section">
+          <div>
+            <p>
+              I am a Full Stack / Front End Developer. I have recently finished
+              my training at Coding Academy where I have learned how to build
+              e2e web apps using both client and server-side tools such as
+              Javascript, React, Mongo, Node, Sass, etc. and I’ve put them to
+              use in my final project - Anyplace, an e2e Airbnb clone.{" "}
+            </p>
+            <p>
+              Over the past few years, I have been working as an account manager
+              in public relations and Adtech companies, where I’ve been working
+              with amazing people, doing versatile and interesting work while
+              having a competitive salary.
+            </p>
+            <p>
+              During that time I’ve been taking online classes at Udemy and
+              Codecademy, learning how to write code on my own. And about a year
+              ago I’ve come to realize that this is what I want to do for the
+              rest of my life and I’ve doubled down, on what was a huge risk for
+              me - I enrolled and graduated from Coding Academy’s Full Stack
+              Development program.
+            </p>
+            <p>This is my stack:</p>
+
+            <ul>
+              {skills.map((skill) => {
+                return (
+                  <li className="green" key={skill.idx}>
+                    {skill}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <Image src={alon} width="100%" height="100%" className="about-img"/>
+        </div>
       </div>
     </section>
   );

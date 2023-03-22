@@ -9,3 +9,16 @@
     flex-direction: column;
   }
 }
+
+.about-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  p {
+    color: $slate;
+    margin-bottom: 1rem;
+  }
+}
+
+.about-img {
+
+}

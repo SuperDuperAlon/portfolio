@@ -1,7 +1,7 @@
 import React from "react";
 import { About } from "./cmps/about";
 import { Contact } from "./cmps/contact";
-import { Expirience } from "./cmps/expirience";
+import { Experience } from "./cmps/experience";
 import { Intro } from "./cmps/intro";
 import { Header } from "./cmps/header";
 import { Projects } from "./cmps/projects";
@@ -14,7 +14,7 @@ export default function Home() {
       <section className="index-layout">
         <Intro />
         <About />
-        <Expirience />
+        <Experience />
         <Projects />
         <Contact />
       </section>

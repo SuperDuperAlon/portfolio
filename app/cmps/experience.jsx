@@ -1,5 +1,5 @@
-export function Expirience() {
-  const expirience = [
+export function Experience() {
+  const Experience = [
     {
       name: "Prequel",
       website: "https://prequel.tv/",
@@ -42,7 +42,7 @@ export function Expirience() {
       <div>
         <h1>Where Ive Worked</h1>
         <ul>
-          {expirience.map((company) => {
+          {Experience.map((company) => {
             return (
               <li key={company.idx}>
                 <div>
