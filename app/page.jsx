@@ -9,13 +9,13 @@ import { Projects } from "./cmps/projects";
 export default function Home() {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <section className="index-layout">
-        {/* <Intro /> */}
-        {/* <About /> */}
-        {/* <Expirience /> */}
+        <Intro />
+        <About />
+        <Expirience />
         <Projects />
-        {/* <Contact /> */}
+        <Contact />
       </section>
     </>
   );
