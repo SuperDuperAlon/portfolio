@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { RxTriangleRight } from "react-icons/rx";
 import alon from "../../public/assets/alon.jpg";
 
 export function About() {
@@ -32,17 +33,18 @@ export function About() {
             </p>
             <p>This is my stack:</p>
 
-            <ul>
+            <ul className="clean-list">
               {skills.map((skill) => {
                 return (
-                  <li className="green" key={skill.idx}>
+                  <li className="tech-stack-list" key={skill.idx}>
+                    <RxTriangleRight />
                     {skill}
                   </li>
                 );
               })}
             </ul>
           </div>
-          <Image src={alon} width="100%" height="100%" className="about-img"/>
+          <Image src={alon} width="100%" height="100%" className="about-img" />
         </div>
       </div>
     </section>
