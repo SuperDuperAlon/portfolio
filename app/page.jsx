@@ -13,9 +13,9 @@ export default function Home() {
       <section className="index-layout">
         {/* <Intro /> */}
         {/* <About /> */}
-        <Expirience />
-        {/* <Projects />
-        <Contact /> */}
+        {/* <Expirience /> */}
+        <Projects />
+        {/* <Contact /> */}
       </section>
     </>
   );
