@@ -55,7 +55,7 @@ export function Projects() {
   ];
 
   return (
-    <section className="intro-layout">
+    <section className="section-layout">
       <div>
         <h1 className="section-header">My Projects</h1>
         <div className="projects-main-section">

@@ -5,7 +5,7 @@ import alon from "../../public/assets/alon.jpg";
 export function About() {
   const skills = ["Javascript (ES6+)", "React", "Node.js", "Sass", "MongoDb"];
   return (
-    <section className="about-layout" id="about">
+    <section className="section-layout" id="about">
       <div>
         <h1 className="section-header">About Me</h1>
         <div className="about-section">

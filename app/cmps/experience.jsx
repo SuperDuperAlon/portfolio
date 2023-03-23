@@ -64,7 +64,7 @@ export function Experience() {
   ];
 
   return (
-    <section className="intro-layout">
+    <section className="section-layout">
       <div>
         <h1 className="section-header">What I&lsquo;ve Done</h1>
         <div className="experience-section">
