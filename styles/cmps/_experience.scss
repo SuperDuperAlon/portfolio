@@ -1,0 +1,7 @@
+.experience-section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    > * {
+        margin: 0 2rem 2rem 0;
+    }
+}
