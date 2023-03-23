@@ -5,3 +5,12 @@
         margin: 0 2rem 2rem 0;
     }
 }
+
+.experience-list {
+    display: flex;
+    margin-bottom: 2px;
+    > span {
+        display: flex;
+        margin: auto 1px;
+    }
+}

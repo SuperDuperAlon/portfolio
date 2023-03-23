@@ -72,16 +72,18 @@ export function Experience() {
             return (
               <li key={company.idx} className="clean-list">
                 <div>
-                  {company.position}
-                  {"  "}
-                  <a href={`${company.website}`}>@ {company.name}</a>
-                  <div>{company.date}</div>
+                  <div className="fs20 mar-b4">
+                    {company.position}
+                    {"  "}
+                    <a href={`${company.website}`}>@ {company.name}</a>
+                  </div>
+                  <div className="fs14 mar-b8">{company.date}</div>
                   <ul>
                     {company.actions.map((action) => {
                       return (
-                        <li key={action.idx} className="clean-list">
+                        <li key={action.idx} className="clean-list experience-list">
                           {" "}
-                          <span>
+                          <span className="green">
                             <RxTriangleRight />
                           </span>
                           {action}

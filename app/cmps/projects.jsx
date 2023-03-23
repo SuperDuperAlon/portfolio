@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function Projects() {
   const projects = [
     {
@@ -65,7 +67,7 @@ export function Projects() {
                 <li key={project.idx}>
                   <section>
                     {/* <div>Featured Project</div> */}
-                    <div>
+                    <div className="fs20 mar-b4">
                       <a href={`${project.url}`}>{project.name}</a>
                     </div>
                     <div>{project.description}</div>
