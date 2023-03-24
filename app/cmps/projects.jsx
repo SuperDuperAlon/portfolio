@@ -60,7 +60,7 @@ export function Projects() {
   ];
 
   return (
-    <section className="section-layout">
+    <section className="section-layout" id="work">
       <div>
         <h1 className="section-header">My Projects</h1>
         <div className="projects-main-section">

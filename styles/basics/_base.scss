@@ -17,6 +17,10 @@ a {
   &:hover {
     color: white;
   }
+  &:active {
+    color: $green;
+    scale: 1.05;
+  }
 }
 
 button {
@@ -35,6 +39,10 @@ button {
   }
   > a:hover {
     color: inherit;
+  }
+
+  &:active {
+    color: white;
   }
 }
 

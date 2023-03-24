@@ -1,6 +1,6 @@
 export function Contact() {
   return (
-    <section className="section-layout">
+    <section className="section-layout" id="contact">
       <div>
         <h1 className="section-header">Get In Touch</h1>
         <p>
