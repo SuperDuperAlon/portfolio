@@ -1,0 +1,23 @@
+// Main
+
+@mixin for-mobile-layout {
+    @media (min-width: $padded-s) {
+        @content;
+    }
+}
+@mixin for-tablet-layout {
+    @media (min-width: $padded-m) {
+        @content;
+    }
+}
+
+@mixin for-normal-layout {
+    @media (min-width: $padded-l) {
+        @content;
+    }
+}
+@mixin for-wide-layout {
+    @media (min-width: $padded-xl) {
+        @content;
+    }
+}

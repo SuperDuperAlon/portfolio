@@ -1,11 +1,14 @@
 import Image from "next/image";
+import Minesweeper from "../../public/assets/Screenshots/minesweeper.jpg";
+import MemeGen from "../../public/assets/Screenshots/memegen.jpg";
+import Anyplace from "../../public/assets/Screenshots/anyplace.jpg";
 
 export function Projects() {
   const projects = [
     {
       name: "Anyplace",
       description: "An Airbnb inspired clone",
-      image: "tba",
+      image: "/assets/Screenshots/anyplace.jpg",
       url: "https://any-place-app.onrender.com/",
       stack: [
         "React",
@@ -22,21 +25,21 @@ export function Projects() {
       name: "Minesweeper",
       description: "The classic game - Sprint #1 project at Coding Academy",
       url: "https://superduperalon.github.io/Meme-Generator/",
-      image: "tba",
+      image: "/assets/Screenshots/minesweeper.jpg",
       stack: ["Javascript", "CSS"],
     },
     {
-      name: "Meme Generator",
+      name: "MemeGen",
       description: "Meme Generator - Sprint #2 at Coding Academy",
       url: "https://superduperalon.github.io/Minesweeper/",
-      image: "tba",
+      image: "/assets/Screenshots/memegen.jpg",
       stack: ["Javascript", "CSS"],
     },
     {
       name: "Web Portfolio",
       description: "This website",
       url: "https://superduperalon.github.io/Minesweeper/",
-      image: "tba",
+      image: "/assets/Screenshots/anyplace.jpg",
       stack: ["React", "Next.js", "Sass", "Javascript", "jsx"],
     },
   ];
@@ -71,7 +74,9 @@ export function Projects() {
                       <a href={`${project.url}`}>{project.name}</a>
                     </div>
                     <div>{project.description}</div>
-                    <div>img</div>
+                    <div className="web-img">
+                      <Image src={project.image} fill />
+                    </div>
                     {project.stack.map((tech) => {
                       return (
                         <li key={tech.idx} className="stack-list">

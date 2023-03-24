@@ -2,3 +2,14 @@ $navy: #0a192f;
 $lightest-slate: #ccd6f6;
 $slate: #8892b0;
 $green: #64ffda;
+
+$small-breakpoint: 605px;
+$medium-breakpoint: 750px;
+$screen-wide-950:950px;
+$large-breakpoint: 1000px;
+$x-large-breakpoint: 1200px;
+
+$padded-s: $small-breakpoint + 2 * 24px;
+$padded-m: $medium-breakpoint + 2 * 20px;
+$padded-l: $large-breakpoint + 2 * 20px;
+$padded-xl: $x-large-breakpoint + 2 * 20px;

@@ -3,7 +3,7 @@ export function Header() {
   return (
     <>
       <section className="header">
-        <div className="logo">A</div>
+        <div className="logo">a.</div>
         <nav className="clean-list">
           {links.map((link) => {
             return (
