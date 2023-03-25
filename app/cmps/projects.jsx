@@ -7,7 +7,7 @@ export function Projects() {
   const projects = [
     {
       name: "Anyplace",
-      description: "An Airbnb inspired clone",
+      description: "An e2e Airbnb inspired clone",
       image: "/assets/Screenshots/anyplace.jpg",
       url: "https://any-place-app.onrender.com/",
       stack: [
@@ -35,13 +35,13 @@ export function Projects() {
       image: "/assets/Screenshots/memegen.jpg",
       stack: ["Javascript", "CSS"],
     },
-    {
-      name: "Web Portfolio",
-      description: "This website",
-      url: "https://superduperalon.github.io/Minesweeper/",
-      image: "/assets/Screenshots/anyplace.jpg",
-      stack: ["React", "Next.js", "Sass", "Javascript", "jsx"],
-    },
+    // {
+    //   name: "Web Portfolio",
+    //   description: "This website",
+    //   url: "https://superduperalon.github.io/Minesweeper/",
+    //   image: "/assets/Screenshots/anyplace.jpg",
+    //   stack: ["React", "Next.js", "Sass", "Javascript", "jsx"],
+    // },
   ];
 
   const otherProjects = [

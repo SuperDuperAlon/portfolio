@@ -10,7 +10,7 @@ import { Footer } from "./cmps/footer";
 export default function Home() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <section className="index-layout">
         <Intro />
         <About />
@@ -18,7 +18,7 @@ export default function Home() {
         <Projects />
         <Contact />
       </section>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

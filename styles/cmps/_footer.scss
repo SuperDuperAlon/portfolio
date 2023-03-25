@@ -1,5 +1,7 @@
 footer {
-  display: flex;
+  // display: flex;
+  position: absolute;
+  bottom: 0;
   justify-content: space-around;
   padding: 3rem;
   width: 100%;

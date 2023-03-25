@@ -1,16 +1,24 @@
-.experience-section {
+@media (min-width: $x-large-breakpoint) {
+  .experience-section {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     > * {
-        margin: 0 2rem 2rem 0;
+      margin: 0 2rem 2rem 0;
     }
-}
+  }
 
-.experience-list {
+  .experience-list {
     display: flex;
     margin-bottom: 2px;
     > span {
-        display: flex;
-        margin: auto 1px;
+      display: flex;
+      margin: auto 1px;
     }
+  }
+}
+
+@media (min-width: $large-breakpoint) {
+  .experience-section {
+    // background-color: chartreuse;
+  }
 }

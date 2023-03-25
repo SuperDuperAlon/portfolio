@@ -1,25 +1,35 @@
-.header {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 2rem;
-  position: absolute;
-  width: 100%;
-}
+@media (min-width: $x-large-breakpoint) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    position: absolute;
+    width: 100%;
+  }
 
-nav li {
-  display: inline-flex;
-}
+  nav li {
+    display: inline-flex;
+  }
 
-nav > li > a {
-  padding: 1rem;
+  nav > li > a {
+    padding: 1rem;
 
-  &:hover {
-    color: white;
+    &:hover {
+      color: white;
+    }
+  }
+
+  .logo {
+    font-size: 3rem;
+    color: $green;
+    font-weight: 600;
   }
 }
+@media (min-width: $x-large-breakpoint) {
+}
 
-.logo {
-  font-size: 3rem;
-  color: $green;
-  font-weight: 600;
+@media (max-width: $medium-breakpoint) {
+  .header {
+    display: none;
+  }
 }

@@ -1,18 +1,32 @@
-.intro-layout {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-
-  > * {
-    margin: auto;
+// @media (min-width: $x-large-breakpoint) {
+  .intro-layout {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+
+    > * {
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    p {
+      color: $slate;
+      margin-top: 1.5rem;
+      font-size: rem(20px);
+      width: 60%;
+    }
   }
 
-  p {
-    color: $slate;
-    margin-top: 1.5rem;
-    font-size: rem(20px);
-    width: 60%;
+  .big-heading {
+    font-size: clamp(32px, 8vw, 64px);
   }
-}
+// }
+// @media (min-width: $large-breakpoint) {
+// }
+
+// @media (max-width: $medium-breakpoint) {
+//   .intro-layout {
+//     min-height: 100vh;
+//   }
+// }
