@@ -17,8 +17,8 @@
   }
 }
 
-@media (min-width: $large-breakpoint) {
-  .experience-section {
-    // background-color: chartreuse;
+@media (max-width: $medium-breakpoint) {
+  .section-layout#experience {
+    display: none;
   }
 }
