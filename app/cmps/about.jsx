@@ -3,7 +3,16 @@ import { RxTriangleRight } from "react-icons/rx";
 import alon from "../../public/assets/alon.jpg";
 
 export function About() {
-  const skills = ["Javascript (ES6+)", "React", "Node.js", "Sass", "MongoDb"];
+  const skills = [
+    "Javascript (ES6+)",
+    "React",
+    "Redux",
+    "Next",
+    "Node.js",
+    "Express",
+    "Sass",
+    "MongoDb",
+  ];
   return (
     <section className="section-layout" id="about">
       <div>
@@ -11,29 +20,21 @@ export function About() {
         <div className="about-section">
           <div>
             <p>
-              I am a Full Stack / Front End Developer. I have recently finished
-              my training at Coding Academy where I have learned how to build
-              e2e web apps using both client and server-side tools such as
-              Javascript, React, Mongo, Node, Sass, etc. and I’ve put them to
-              use in my final project - Anyplace, an e2e Airbnb clone.{" "}
+              I am a Full Stack Developer and Front End Enthusiast looking for
+              an opportunity to code professionally. I have versatile experience
+              in Account Management at Ad-tech and Public Relations, where I’ve
+              been working with amazing people, doing versatile, interesting and
+              influential work, while putting my soft skills to use.
             </p>
             <p>
-              Over the past few years, I have been working as an account manager
-              in public relations and Adtech companies, where I’ve been working
-              with amazing people, doing versatile and interesting work while
-              having a competitive salary.
+              Over the past few months I have been learning how to use Client
+              and Server side tools, frameworks and languages, and putting them
+              to use building e2e apps, such as Anyplace, an Airbnb clone, and
+              many others after-school projects.
             </p>
-            <p>
-              During that time I’ve been taking online classes at Udemy and
-              Codecademy, learning how to write code on my own. And about a year
-              ago I’ve come to realize that this is what I want to do for the
-              rest of my life and I’ve doubled down, on what was a huge risk for
-              me - I enrolled and graduated from Coding Academy’s Full Stack
-              Development program.
-            </p>
-            <p>This is my stack:</p>
+            <p>This is my main stack:</p>
 
-            <ul className="clean-list">
+            <ul className="clean-list mar-b16">
               {skills.map((skill) => {
                 return (
                   <li className="tech-stack-list" key={skill.idx}>
@@ -43,6 +44,11 @@ export function About() {
                 );
               })}
             </ul>
+
+            <p>
+              I have also encountered and used Java, SQL, Angular, Vue, Vuex,
+              Typescript, etc.
+            </p>
           </div>
           <Image src={alon} width="100%" height="100%" className="about-img" />
         </div>

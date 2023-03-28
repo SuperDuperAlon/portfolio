@@ -7,7 +7,7 @@ export function Projects() {
   const projects = [
     {
       name: "Anyplace",
-      description: "An e2e Airbnb inspired clone",
+      description: "An e2e Airbnb clone using client and server side tools. Was built as a final project at Coding Academy",
       image: "/assets/Screenshots/anyplace.jpg",
       url: "https://any-place-app.onrender.com/",
       stack: [
@@ -73,7 +73,7 @@ export function Projects() {
                     <div className="fs20 mar-b4">
                       <a href={`${project.url}`}>{project.name}</a>
                     </div>
-                    <div>{project.description}</div>
+                    <div className="mar-b8">{project.description}</div>
                     <div className="web-img">
                       <Image src={project.image} fill />
                     </div>
