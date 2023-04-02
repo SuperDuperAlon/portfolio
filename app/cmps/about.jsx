@@ -5,9 +5,10 @@ import alon from "../../public/assets/alon.jpg";
 export function About() {
   const skills = [
     "Javascript (ES6+)",
+    "TypeScript",
     "React",
+    "Next.js",
     "Redux",
-    "Next",
     "Node.js",
     "Express",
     "Sass",
