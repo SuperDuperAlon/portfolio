@@ -38,6 +38,12 @@ export default function Home() {
           {/* <Footer /> */}
         </section>
       )}
+
+      {isMobile && (
+        <section className="index-layout scroll">
+          <Intro />
+        </section>
+      )}
     </>
   );
 }
