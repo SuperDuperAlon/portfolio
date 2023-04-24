@@ -52,6 +52,7 @@ export function About() {
               width="100%"
               height="100%"
               className="about-img"
+              alt="alon"
             />
           </div>
           <div>
