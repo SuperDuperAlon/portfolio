@@ -12,13 +12,17 @@ import { Footer } from "./cmps/footer";
 import { Social } from "./cmps/social-menu";
 
 export default function Home() {
+
+  var size = undefined
+
   if (typeof window !== "undefined") {
-    // You now have access to `window`
-    console.log("You now have access to");
+    size = window.innerWidth
+  } else {
+    console.error("Please")
   }
 
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 687);
   const MOBILE_WIDTH = 687;
+  const [isMobile, setIsMobile] = useState(size < 687);
 
   useEffect(() => {
     window.addEventListener("resize", updateDimensions);
