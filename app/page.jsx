@@ -10,7 +10,6 @@ import { Header } from "./cmps/header";
 import { Projects } from "./cmps/projects";
 import { Footer } from "./cmps/footer";
 import { Social } from "./cmps/social-menu";
-// import { useClient } from "blitz";
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 687);
@@ -24,8 +23,6 @@ export default function Home() {
   function updateDimensions() {
     setIsMobile(window.innerWidth < MOBILE_WIDTH);
   }
-
-  // const client = useClient();
 
   return (
     <>
