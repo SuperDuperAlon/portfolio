@@ -1,0 +1,15 @@
+.social {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+}
+
+.social-list a {
+  > svg {
+    height: 1.5rem;
+    width: 1.5rem;
+    &:hover {
+        scale: 1.07
+    }
+  }
+}

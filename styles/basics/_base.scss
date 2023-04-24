@@ -72,6 +72,17 @@ img {
   position: static;
 }
 
+.scroll {
+
+    scroll-snap-type: y mandatory;
+    // scroll-snap-align: center;
+    // scroll-padding: 20px;
+    &.snap {
+      scroll-snap-align: start;
+    }
+  
+}
+
 @media (max-width: $medium-breakpoint) {
   .section-header {
     width: 100%;

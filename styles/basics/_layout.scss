@@ -23,7 +23,7 @@
     display: flex;
     margin: 0;
     // place-items: center;
-    > *>*{
+    > * > * {
       // display: flex;
       // margin: 0 auto;
       // justify-content: center;
@@ -46,6 +46,8 @@
     &.full {
       grid-column: 1 /-1;
     }
+
+
   }
 
   @include for-tablet-layout {

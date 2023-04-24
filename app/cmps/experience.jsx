@@ -64,7 +64,7 @@ export function Experience() {
   ];
 
   return (
-    <section className="section-layout" id="experience">
+    <section className="section-layout snap" id="experience">
       <div>
         <h1 className="section-header">What I&lsquo;ve Done</h1>
         <div className="experience-section">

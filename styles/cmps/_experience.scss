@@ -19,6 +19,23 @@
 
 @media (max-width: $medium-breakpoint) {
   .section-layout#experience {
-    display: none;
+    // > li {
+    //   margin-bottom: 0.5rem;
+    // }
+    // display: flex;
+  }
+
+  .experience-section {
+    ul {
+      list-style-type: none;
+      padding-inline-start: 0.5rem;
+      margin-bottom: 1rem;
+      > li {
+        margin-bottom: 0.25rem;
+      }
+    }
+    > li {
+      margin: 2rem 0;
+    }
   }
 }

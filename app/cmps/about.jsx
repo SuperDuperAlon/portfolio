@@ -1,57 +1,83 @@
 import Image from "next/image";
-import { RxTriangleRight } from "react-icons/rx";
 import alon from "../../public/assets/alon.jpg";
 
+import { FaJava, FaReact } from "react-icons/fa";
+import {
+  SiJavascript,
+  SiTypescript,
+  SiMongodb,
+  SiNodedotjs,
+  SiVuedotjs,
+  SiSass,
+  SiExpress,
+  SiSqlite,
+  SiAngular,
+  SiRedux,
+  SiNextdotjs,
+  SiCss3,
+  SiHtml5,
+} from "react-icons/si";
+
 export function About() {
-  const skills = [
-    "Javascript (ES6+)",
-    "TypeScript",
-    "React",
-    "Next.js",
-    "Redux",
-    "Node.js",
-    "Express",
-    "Sass",
-    "MongoDb",
+
+  const icons = [
+    { name: "Javascript (ES6+)", img: <SiJavascript /> },
+    { name: "Typescript", img: <SiTypescript /> },
+    { name: "React", img: <FaReact /> },
+    { name: "Redux", img: <SiRedux /> },
+    { name: "Next.js", img: <SiNextdotjs /> },
+    { name: "Vue", img: <SiVuedotjs /> },
+    { name: "Angular", img: <SiAngular /> },
+    { name: "Sass", img: <SiSass /> },
+    { name: "Node", img: <SiNodedotjs /> },
+    { name: "Express", img: <SiExpress /> },
+    { name: "Java", img: <FaJava /> },
+    { name: "SQL", img: <SiSqlite /> },
+    { name: "MongoDB", img: <SiMongodb /> },
+    { name: "CSS", img: <SiCss3 /> },
+    { name: "HTML", img: <SiHtml5 /> },
   ];
+
   return (
-    <section className="section-layout" id="about">
+    <section className="section-layout scroll snap" id="about">
       <div>
         <h1 className="section-header">About Me</h1>
         <div className="about-section">
+          <div className="img-container">
+            <Image
+              src={alon}
+              width="100%"
+              height="100%"
+              className="about-img"
+            />
+          </div>
           <div>
             <p>
-              I am a Full Stack Developer and Front End Enthusiast looking for
-              an opportunity to code professionally. I have versatile experience
-              in Account Management at Ad-tech and Public Relations, where I’ve
-              been working with amazing people, doing versatile, interesting and
-              influential work, while putting my soft skills to use.
+              A marketing professional turned Full Stack Developer who likes to
+              put colors on blocks of code. My main stack is JavaScript (ES6+),
+              React, Node, Sass, and MongoDB. As a Coding Academy Bootcamp
+              graduate, I'm well-trained in building well-designed E2E web apps.
             </p>
             <p>
-              Over the past few months I have been learning how to use Client
-              and Server side tools, frameworks and languages, and putting them
-              to use building e2e apps, such as Anyplace, an Airbnb clone, and
-              many others after-school projects.
-            </p>
-            <p>This is my main stack:</p>
-
-            <ul className="clean-list mar-b16">
-              {skills.map((skill) => {
-                return (
-                  <li className="tech-stack-list" key={skill.idx}>
-                    <RxTriangleRight />
-                    {skill}
-                  </li>
-                );
-              })}
-            </ul>
-
-            <p>
-              I have also encountered and used Java, SQL, Angular, Vue, Vuex,
-              Typescript, etc.
+              I come with varied experience from my past endeavors where I was a
+              significant part of the companies I've worked at and helped them
+              grow their revenue and clientele. I'm an organized, fast-learning
+              autodidact, who's working great in a team, knowledgeable, and
+              who's not afraid of taking challenges.
             </p>
           </div>
-          <Image src={alon} width="100%" height="100%" className="about-img" />
+        </div>
+        <div className="mar-b16">
+          <div className="stack-list mar-b16">
+            {icons.map((icon) => {
+              return (
+                <div className="tech-stack-list" key={icon.idx}>
+                  {icon.img}
+                  <div>{icon.name}</div>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>
