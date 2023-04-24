@@ -72,7 +72,7 @@ export function Projects() {
                     </div>
                     <div className="mar-b8">{project.description}</div>
                     <div className="web-img">
-                      <Image src={project.image} fill />
+                      <Image src={project.image} fill alt="project" />
                     </div>
                     {project.stack.map((tech) => {
                       return (
