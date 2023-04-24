@@ -1,6 +1,6 @@
 export function Intro() {
   return (
-    <section className="intro-layout snap">
+    <section className="intro-layout">
       <div>
         <h3 className="green">Hi, my name is</h3>
         <h1 className="big-heading light-slate mar-t24">Alon Mlievski.</h1>

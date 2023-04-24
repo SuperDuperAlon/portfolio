@@ -42,7 +42,7 @@ export function About() {
   ];
 
   return (
-    <section className="section-layout scroll snap" id="about">
+    <section className="section-layout" id="about">
       <div>
         <h1 className="section-header">About Me</h1>
         <div className="about-section">

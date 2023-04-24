@@ -37,7 +37,7 @@ export default function Home() {
     <>
       {/* <Header /> */}
       {!isMobile && (
-        <section className="index-layout scroll">
+        <section className="index-layout">
           <Intro />
           <About />
           <Experience />
@@ -49,7 +49,7 @@ export default function Home() {
       )}
 
       {isMobile && (
-        <section className="index-layout scroll">
+        <section className="index-layout">
           <Intro />
         </section>
       )}
