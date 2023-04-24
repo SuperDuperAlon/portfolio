@@ -16,10 +16,11 @@ import {
   SiNextdotjs,
   SiCss3,
   SiHtml5,
+  SiBootstrap,
+  SiJquery,
 } from "react-icons/si";
 
 export function About() {
-
   const icons = [
     { name: "Javascript (ES6+)", img: <SiJavascript /> },
     { name: "Typescript", img: <SiTypescript /> },
@@ -29,13 +30,15 @@ export function About() {
     { name: "Vue", img: <SiVuedotjs /> },
     { name: "Angular", img: <SiAngular /> },
     { name: "Sass", img: <SiSass /> },
-    { name: "Node", img: <SiNodedotjs /> },
-    { name: "Express", img: <SiExpress /> },
+    { name: "Node.js", img: <SiNodedotjs /> },
+    { name: "Express.js", img: <SiExpress /> },
     { name: "Java", img: <FaJava /> },
     { name: "SQL", img: <SiSqlite /> },
     { name: "MongoDB", img: <SiMongodb /> },
     { name: "CSS", img: <SiCss3 /> },
     { name: "HTML", img: <SiHtml5 /> },
+    { name: "Bootstrap", img: <SiBootstrap /> },
+    { name: "JQuery", img: <SiJquery /> },
   ];
 
   return (
