@@ -47,13 +47,13 @@ export function About() {
         <h1 className="section-header">About Me</h1>
         <div className="about-section">
           <div className="img-container">
-            <Image
+            {/* <Image
               src={alon}
               width={100}
               height={100}
               className="about-img"
               alt="alon"
-            />
+            /> */}
           </div>
           <div>
             <p>
