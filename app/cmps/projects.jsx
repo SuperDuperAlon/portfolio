@@ -1,15 +1,13 @@
 import Image from "next/image";
-import Minesweeper from "../../public/assets/Screenshots/minesweeper.jpg";
-import MemeGen from "../../public/assets/Screenshots/memegen.jpg";
-import Anyplace from "../../public/assets/Screenshots/anyplace.jpg";
 
 export function Projects() {
   const projects = [
     {
       name: "Anyplace",
-      description: "An e2e Airbnb clone using client and server side tools. Was built as a final project at Coding Academy",
+      description:
+        "An E2E Airbnb clone using client and server side tools. Was built as a final project at Coding Academy",
       image: "/assets/Screenshots/anyplace.jpg",
-      url: "https://any-place-app.onrender.com/",
+      url: "https://anyplace-h06h.onrender.com/",
       stack: [
         "React",
         "Redux",
@@ -24,14 +22,14 @@ export function Projects() {
     {
       name: "Minesweeper",
       description: "The classic game - Sprint #1 project at Coding Academy",
-      url: "https://superduperalon.github.io/Meme-Generator/",
+      url: "https://superduperalon.github.io/Minesweeper/",
       image: "/assets/Screenshots/minesweeper.jpg",
       stack: ["Javascript", "CSS"],
     },
     {
       name: "MemeGen",
       description: "Meme Generator - Sprint #2 at Coding Academy",
-      url: "https://superduperalon.github.io/Minesweeper/",
+      url: "https://superduperalon.github.io/Meme-Generator/",
       image: "/assets/Screenshots/memegen.jpg",
       stack: ["Javascript", "CSS"],
     },
@@ -40,7 +38,7 @@ export function Projects() {
     //   description: "This website",
     //   url: "https://superduperalon.github.io/Minesweeper/",
     //   image: "/assets/Screenshots/anyplace.jpg",
-    //   stack: ["React", "Next.js", "Sass", "Javascript", "jsx"],
+    //   stack: ["React", "Next.js", "Sass", "Javascript"],
     // },
   ];
 
@@ -60,7 +58,7 @@ export function Projects() {
   ];
 
   return (
-    <section className="section-layout" id="work">
+    <section className="section-layout snap" id="work">
       <div>
         <h1 className="section-header">My Projects</h1>
         <div className="projects-main-section">
@@ -69,7 +67,6 @@ export function Projects() {
               return (
                 <li key={project.idx}>
                   <section>
-                    {/* <div>Featured Project</div> */}
                     <div className="fs20 mar-b4">
                       <a href={`${project.url}`}>{project.name}</a>
                     </div>
