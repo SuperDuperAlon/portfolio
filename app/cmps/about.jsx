@@ -60,14 +60,14 @@ export function About() {
               A marketing professional turned Full Stack Developer who likes to
               put colors on blocks of code. My main stack is JavaScript (ES6+),
               React, Node, Sass, and MongoDB. As a Coding Academy Bootcamp
-              graduate, I'm well-trained in building well-designed E2E web apps.
+              graduate, I&apos;m well-trained in building well-designed E2E web apps.
             </p>
             <p>
               I come with varied experience from my past endeavors where I was a
-              significant part of the companies I've worked at and helped them
-              grow their revenue and clientele. I'm an organized, fast-learning
-              autodidact, who's working great in a team, knowledgeable, and
-              who's not afraid of taking challenges.
+              significant part of the companies I&apos;ve worked at and helped them
+              grow their revenue and clientele. I&apos;m an organized, fast-learning
+              autodidact, who&apos;s working great in a team, knowledgeable, and
+              who&apos;s not afraid of taking challenges.
             </p>
           </div>
         </div>
