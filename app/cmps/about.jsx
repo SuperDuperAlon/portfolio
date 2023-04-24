@@ -23,6 +23,8 @@ import {
 export function About() {
   const icons = [
     { name: "Javascript (ES6+)", img: <SiJavascript /> },
+    { name: "CSS", img: <SiCss3 /> },
+    { name: "HTML", img: <SiHtml5 /> },
     { name: "Typescript", img: <SiTypescript /> },
     { name: "React", img: <FaReact /> },
     { name: "Redux", img: <SiRedux /> },
@@ -35,8 +37,6 @@ export function About() {
     { name: "Java", img: <FaJava /> },
     { name: "SQL", img: <SiSqlite /> },
     { name: "MongoDB", img: <SiMongodb /> },
-    { name: "CSS", img: <SiCss3 /> },
-    { name: "HTML", img: <SiHtml5 /> },
     { name: "Bootstrap", img: <SiBootstrap /> },
     { name: "JQuery", img: <SiJquery /> },
   ];
@@ -52,7 +52,7 @@ export function About() {
               width={100}
               height={100}
               className="about-img"
-              alt="alon"
+              alt="about-me-photo"
             />
           </div>
           <div>
