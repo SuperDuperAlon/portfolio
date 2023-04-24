@@ -51,6 +51,11 @@ export default function Home() {
       {isMobile && (
         <section className="index-layout">
           <Intro />
+          <About />
+          <Experience />
+          <Projects />
+          <Contact />
+          <Footer />
         </section>
       )}
     </>

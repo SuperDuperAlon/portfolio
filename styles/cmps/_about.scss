@@ -6,7 +6,6 @@
   p {
     color: $slate;
     margin-bottom: 1rem;
-    
   }
   > :last-child {
     // width: 100%;
@@ -14,7 +13,7 @@
     // > {
     //   justify-content: end;
     // }
-    margin: auto 0 ;
+    margin: auto 0;
     margin-left: 1rem;
   }
 }
@@ -94,19 +93,20 @@
     flex-direction: column;
 
     > {
-      align-items: center;
+
     }
-    > :first-child {
-      order: 2;
+    > :nth-child(2) {
+      margin-left: 0;
+      text-align: justify;
     }
-    > :last-child {
-      order: 1;
-      margin-bottom: rem(32px);
-    }
+  }
+
+  .img-container {
+    justify-content: center;
   }
 
   .about-img {
     border-radius: 50%;
-    height: 300px;
+    // height: 300px;
   }
 }

@@ -60,6 +60,13 @@ h6 {
   line-height: 1.1;
 }
 
+p {
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+
+}
+
 .section-header {
   font-size: rem(32px);
   color: $green;
