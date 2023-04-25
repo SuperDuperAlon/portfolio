@@ -18,9 +18,31 @@
   }
 }
 
+// .dot {
+//   animation: pulse 2s infinite;
+// }
+
 .big-heading {
   font-size: clamp(32px, 8vw, 64px);
 }
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba($slate, 0.7);
+  }
+  
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba($slate, 0);
+  }
+  
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba($slate, 0);
+  }
+}
+
 // }
 // @media (min-width: $large-breakpoint) {
 // }

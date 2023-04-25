@@ -10,15 +10,15 @@ import { Header } from "./cmps/header";
 import { Projects } from "./cmps/projects";
 import { Footer } from "./cmps/footer";
 import { Social } from "./cmps/social-menu";
+import { ExperienceMB } from "./cmps/experience-mb";
 
 export default function Home() {
-
-  var size = undefined
+  var size = undefined;
 
   if (typeof window !== "undefined") {
-    size = window.innerWidth
+    size = window.innerWidth;
   } else {
-    console.error("Please")
+    console.error("Please");
   }
 
   const MOBILE_WIDTH = 687;
@@ -52,7 +52,7 @@ export default function Home() {
         <section className="index-layout">
           <Intro />
           <About />
-          <Experience />
+          <ExperienceMB />
           <Projects />
           <Contact />
           <Footer />
