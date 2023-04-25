@@ -74,9 +74,9 @@ export function About() {
         </div>
         <div className="mar-b16">
           <div className="stack-list mar-b16">
-            {icons.map((icon) => {
+            {icons.map((icon, idx) => {
               return (
-                <div className="tech-stack-list" key={icon.idx}>
+                <div className="tech-stack-list" key={idx}>
                   {icon.img}
                   <div>{icon.name}</div>
                 </div>

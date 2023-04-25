@@ -63,9 +63,9 @@ export function Projects() {
         <h1 className="section-header">My Projects</h1>
         <div className="projects-main-section">
           <ul className="clean-list">
-            {projects.map((project) => {
+            {projects.map((project, idx) => {
               return (
-                <li key={project.idx}>
+                <li key={idx}>
                   <section>
                     <div className="fs20 mar-b4">
                       <a href={`${project.url}`}>{project.name}</a>

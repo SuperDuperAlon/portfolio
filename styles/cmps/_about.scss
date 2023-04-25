@@ -82,18 +82,11 @@
     margin: 3rem 0;
   }
 
-  .section-header {
-    &.about {
-      display: none;
-    }
-  }
-
   .about-section {
     display: flex;
     flex-direction: column;
 
     > {
-
     }
     > :nth-child(2) {
       margin-left: 0;

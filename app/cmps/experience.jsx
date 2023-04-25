@@ -1,7 +1,9 @@
+import { useState } from "react";
 import { RxTriangleRight } from "react-icons/rx";
 
 export function Experience() {
-  const Experience = [
+  const [currentItem, setCurrentItem] = useState(0);
+  const experience = [
     {
       name: "Prequel",
       website: "https://prequel.tv/",
@@ -63,38 +65,53 @@ export function Experience() {
     },
   ];
 
+  function handleChange(num) {
+    console.log(num);
+    setCurrentItem(num);
+  }
+  // if (!experience[0]) console.log("experience  ");
+  // else
   return (
     <section className="section-layout" id="experience">
       <div>
         <h1 className="section-header">What I&lsquo;ve Done</h1>
         <div className="experience-section">
-          {Experience.map((company) => {
-            return (
-              <li key={company.idx} className="clean-list">
-                <div>
-                  <div className="fs20 mar-b4">
-                    {company.position}
-                    {"  "}
-                    <a href={`${company.website}`}>@ {company.name}</a>
-                  </div>
-                  <div className="fs14 mar-b8">{company.date}</div>
-                  <ul>
-                    {company.actions.map((action) => {
-                      return (
-                        <li key={action.idx} className="clean-list experience-list">
-                          {" "}
-                          <span className="green">
-                            <RxTriangleRight />
-                          </span>
-                          {action}
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </div>
-              </li>
-            );
-          })}
+          <ul className="clean-list">
+            {experience.map((button, idx) => {
+              return (
+                <>
+                  <button className="btn-exp" onClick={() => handleChange(idx)}>
+                    <li>{button.name}</li>
+                  </button>
+                </>
+              );
+            })}
+          </ul>
+          {
+            <div>
+              <div className="fs20 mar-b4">
+                {experience[currentItem].position}
+                {"  "}
+                <a href={`${experience[currentItem].website}`}>
+                  @ {experience[currentItem].name}
+                </a>
+              </div>
+              <div className="fs14 mar-b8">{experience[currentItem].date}</div>
+              <ul>
+                {experience[currentItem].actions.map((action, idx) => {
+                  return (
+                    <li key={idx} className="clean-list experience-list">
+                      {" "}
+                      <span className="green">
+                        <RxTriangleRight />
+                      </span>
+                      {action}
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          }
         </div>
       </div>
     </section>
