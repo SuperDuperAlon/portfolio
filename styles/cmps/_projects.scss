@@ -26,4 +26,9 @@ li.stack-list {
   object-fit: cover;
   position: relative;
   margin-bottom: 0.5rem;
+  filter: saturate(0.1);
+  transition: all 0.3s ease;
+  &:hover {
+    filter: saturate(0.7);
+  }
 }

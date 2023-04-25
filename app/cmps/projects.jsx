@@ -20,6 +20,13 @@ export function Projects() {
       ],
     },
     {
+      name: "Web Portfolio",
+      description: "This website",
+      url: "https://portfolio-superduperalon.vercel.app/",
+      image: "/assets/Screenshots/portfolio.jpg",
+      stack: ["React", "Next.js", "Sass", "Javascript"],
+    },
+    {
       name: "Minesweeper",
       description: "The classic game - Sprint #1 project at Coding Academy",
       url: "https://superduperalon.github.io/Minesweeper/",
@@ -33,13 +40,6 @@ export function Projects() {
       image: "/assets/Screenshots/memegen.jpg",
       stack: ["Javascript", "CSS"],
     },
-    // {
-    //   name: "Web Portfolio",
-    //   description: "This website",
-    //   url: "https://superduperalon.github.io/Minesweeper/",
-    //   image: "/assets/Screenshots/anyplace.jpg",
-    //   stack: ["React", "Next.js", "Sass", "Javascript"],
-    // },
   ];
 
   const otherProjects = [
@@ -72,7 +72,7 @@ export function Projects() {
                     </div>
                     <div className="mar-b8">{project.description}</div>
                     <div className="web-img">
-                      <Image src={project.image} fill alt="project" />
+                      <Image src={project.image} fill alt="project" className="proj-img" />
                     </div>
                     {project.stack.map((tech) => {
                       return (
