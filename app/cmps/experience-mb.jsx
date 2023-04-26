@@ -74,21 +74,6 @@ export function ExperienceMB() {
       <h1 className="section-header">What I&lsquo;ve Done</h1>
       <div className="experience-section">
         <div>
-          <label htmlFor="experienceRange"></label>
-          <input
-            type="range"
-            id="experienceRange"
-            name="experienceRange"
-            min="0"
-            max={experience.length - 1}
-            onChange={handleRangeChange}
-            value={index}
-          />
-
-          {/* <p>{experience[index].name}</p> */}
-        </div>
-
-        <div>
           <div className="fs20 mar-b4">
             {experience[index].position}
             {"  "}
@@ -112,6 +97,20 @@ export function ExperienceMB() {
               );
             })}
           </ul>
+        </div>
+        <div>
+          <label htmlFor="experienceRange"></label>
+          <input
+            type="range"
+            id="experienceRange"
+            name="experienceRange"
+            min="0"
+            max={experience.length - 1}
+            onChange={handleRangeChange}
+            value={index}
+          />
+
+          {/* <p>{experience[index].name}</p> */}
         </div>
       </div>
     </section>
