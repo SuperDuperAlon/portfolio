@@ -46,8 +46,6 @@
     &.full {
       grid-column: 1 /-1;
     }
-
-
   }
 
   @include for-tablet-layout {
@@ -65,8 +63,9 @@
   }
 
   @include for-wide-layout {
-    grid-template-columns:
-      // minmax($pad-40,1fr) minmax($x-large-breakpoint, 1700px) minmax($pad-40,1fr);
-      minmax(auto, 1fr) minmax(auto, $x-large-breakpoint) minmax(auto, 1fr);
+    grid-template-columns: minmax(auto, 1fr) minmax(auto, $x-large-breakpoint) minmax(
+        auto,
+        1fr
+      );
   }
 }

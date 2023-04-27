@@ -35,7 +35,6 @@ button {
   padding: 1rem 1.5rem;
 
   &:hover {
-    // opacity: 30%;
     background: rgba($color: $green, $alpha: 0.1);
   }
   > a:hover {
@@ -78,17 +77,6 @@ img {
   aspect-ratio: 16/9;
   position: static;
 }
-
-// .scroll {
-
-//     scroll-snap-type: y mandatory;
-//     // scroll-snap-align: center;
-//     // scroll-padding: 20px;
-//     &.snap {
-//       scroll-snap-align: start;
-//     }
-
-// }
 
 @media (max-width: $medium-breakpoint) {
   h1.section-header {
