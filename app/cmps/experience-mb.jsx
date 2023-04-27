@@ -74,20 +74,20 @@ export function ExperienceMB() {
       <h1 className="section-header">What I&lsquo;ve Done</h1>
       <div className="experience-section">
         <div>
-          <div className="fs20 mar-b4">
+          <div className="fs20 mar-b4 light-slate">
             {experience[index].position}
             {"  "}
           </div>
-          <div>
+          <div className="mar-b4">
             <a href={`${experience[index].website}`}>
               @ {experience[index].name}
             </a>
           </div>
-          <div className="fs14 mar-b8">{experience[index].date}</div>
+          <div className="fs14 mar-b16">{experience[index].date}</div>
           <ul>
             {experience[index].actions.map((action, idx) => {
               return (
-                <li key={idx} className="clean-list experience-list">
+                <li key={idx} className="clean-list experience-list mar-b4">
                   {" "}
                   <span className="green">
                     <RxTriangleRight />

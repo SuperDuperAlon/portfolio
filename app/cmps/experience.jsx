@@ -89,7 +89,7 @@ export function Experience() {
           </ul>
           {
             <div>
-              <div className="fs20 mar-b4">
+              <div className="fs20 mar-b4 light-slate">
                 {experience[currentItem].position}
                 {"  "}
                 <a href={`${experience[currentItem].website}`}>
