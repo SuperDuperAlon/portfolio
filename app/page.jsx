@@ -55,7 +55,7 @@ export default function Home() {
           <ExperienceMB />
           <Projects />
           <Contact />
-          <Footer />
+          <Social />
         </section>
       )}
     </>
