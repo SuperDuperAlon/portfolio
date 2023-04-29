@@ -1,26 +1,7 @@
-import { useState, useRef, useEffect } from "react";
+// import { useState, useRef, useEffect } from "react";
 import { RxTriangleRight } from "react-icons/rx";
 
 export function ExperienceMB() {
-  const [index, setIndex] = useState(0);
-  const ref = useRef();
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        // if (entry.isIntersecting) {
-        //   entry.target.classList.add("observed");
-        // } else {
-        //   entry.target.classList.remove("observed");
-        // }
-      });
-    });
-
-    observer.observe(ref.current);
-
-    return () => {
-      observer.unobserve(ref.current);
-    };
-  }, []);
 
   const experience = [
     {
@@ -83,33 +64,6 @@ export function ExperienceMB() {
       ],
     },
   ];
-
-  const showSlide = (currentSlide) => {
-    setCurrentSlide(currentSlide);
-  };
-
-  function showNextSlide() {
-    console.log(currentSlide);
-    if (currentSlide < experience.length) {
-      setCurrentSlide(currentSlide + 1);
-      showSlide(currentSlide);
-    } else {
-      setCurrentSlide(1);
-      showSlide(currentSlide);
-    }
-  }
-
-  const showPreviousSlide = () => {
-    if (currentSlide > 1) {
-      setCurrentSlide(currentSlide - 1);
-    } else {
-      setCurrentSlide(experience.length);
-    }
-  };
-
-  function handleRangeChange(ev) {
-    setIndex(parseInt(ev.target.value));
-  }
 
   return (
     <section className="section-layout " id="experience" ref={ref}>
