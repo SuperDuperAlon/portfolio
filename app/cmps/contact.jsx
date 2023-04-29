@@ -1,7 +1,7 @@
 export function Contact() {
   return (
     <section className="intro-layout" id="contact">
-      <div>
+      <div className="observed">
         <h1 className="section-header">Get In Touch</h1>
         <p>
           Im always looking for opportunities to learn and grow professionally

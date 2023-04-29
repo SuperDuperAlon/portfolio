@@ -1,6 +1,7 @@
 import Image from "next/image";
 import alon from "../../public/assets/alon.jpg";
-
+import { useEffect } from "react";
+import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
 import { FaJava, FaReact } from "react-icons/fa";
 import {
   SiJavascript,
@@ -21,6 +22,12 @@ import {
 } from "react-icons/si";
 
 export function About() {
+  const observeIntersection = useIntersectionObserver();
+
+  useEffect(() => {
+    observeIntersection("section-layout");
+  }, []);
+
   const icons = [
     { name: "Javascript (ES6+)", img: <SiJavascript /> },
     { name: "CSS", img: <SiCss3 /> },

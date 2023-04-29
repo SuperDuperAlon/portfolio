@@ -1,8 +1,27 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { RxTriangleRight } from "react-icons/rx";
 
 export function ExperienceMB() {
   const [index, setIndex] = useState(0);
+  const ref = useRef();
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        // if (entry.isIntersecting) {
+        //   entry.target.classList.add("observed");
+        // } else {
+        //   entry.target.classList.remove("observed");
+        // }
+      });
+    });
+
+    observer.observe(ref.current);
+
+    return () => {
+      observer.unobserve(ref.current);
+    };
+  }, []);
+
   const experience = [
     {
       name: "Prequel",
@@ -65,52 +84,61 @@ export function ExperienceMB() {
     },
   ];
 
+  const showSlide = (currentSlide) => {
+    setCurrentSlide(currentSlide);
+  };
+
+  function showNextSlide() {
+    console.log(currentSlide);
+    if (currentSlide < experience.length) {
+      setCurrentSlide(currentSlide + 1);
+      showSlide(currentSlide);
+    } else {
+      setCurrentSlide(1);
+      showSlide(currentSlide);
+    }
+  }
+
+  const showPreviousSlide = () => {
+    if (currentSlide > 1) {
+      setCurrentSlide(currentSlide - 1);
+    } else {
+      setCurrentSlide(experience.length);
+    }
+  };
+
   function handleRangeChange(ev) {
     setIndex(parseInt(ev.target.value));
   }
 
   return (
-    <section className="section-layout" id="experience">
+    <section className="section-layout " id="experience" ref={ref}>
       <h1 className="section-header">What I&lsquo;ve Done</h1>
       <div className="experience-section">
         <div>
-          <div className="fs20 mar-b4 light-slate">
-            {experience[index].position}
-            {"  "}
-          </div>
-          <div className="mar-b4">
-            <a href={`${experience[index].website}`}>
-              @ {experience[index].name}
-            </a>
-          </div>
-          <div className="fs14 mar-b16">{experience[index].date}</div>
           <ul>
-            {experience[index].actions.map((action, idx) => {
+            {experience.map((exp, idx) => {
               return (
-                <li key={idx} className="clean-list experience-list mar-b4">
-                  {" "}
-                  <span className="green">
-                    <RxTriangleRight />
-                  </span>
-                  {action}
+                <li key={idx} className="flex column">
+                  <div className="fs20 mar-b4 light-slate">{exp.position}</div>
+                  <a href={`${exp.website}`}>@ {exp.name}</a>
+                  <div className="fs14 mar-b8">{exp.date}</div>
+                  <ul className="inner-ul">
+                    {exp.actions.map((action, idx) => {
+                      return (
+                        <li key={idx} className="inner-list">
+                          <span className="green">
+                            <RxTriangleRight />
+                          </span>
+                          {action}
+                        </li>
+                      );
+                    })}
+                  </ul>
                 </li>
               );
             })}
           </ul>
-        </div>
-        <div>
-          <label htmlFor="experienceRange"></label>
-          <input
-            type="range"
-            id="experienceRange"
-            name="experienceRange"
-            min="0"
-            max={experience.length - 1}
-            onChange={handleRangeChange}
-            value={index}
-          />
-
-          {/* <p>{experience[index].name}</p> */}
         </div>
       </div>
     </section>

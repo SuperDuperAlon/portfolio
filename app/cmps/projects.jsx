@@ -59,7 +59,7 @@ export function Projects() {
 
   return (
     <section className="section-layout" id="work">
-      <div>
+      <div className="observed">
         <h1 className="section-header">My Projects</h1>
         <div className="projects-main-section">
           <ul className="clean-list">

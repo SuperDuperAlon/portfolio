@@ -73,7 +73,7 @@ export function Experience() {
   // else
   return (
     <section className="section-layout" id="experience">
-      <div>
+      <div className="observed">
         <h1 className="section-header">What I&lsquo;ve Done</h1>
         <div className="experience-section">
           <ul className="clean-list">
