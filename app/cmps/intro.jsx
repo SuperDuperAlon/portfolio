@@ -2,11 +2,11 @@ import { useEffect } from "react";
 import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
 
 export function Intro() {
-  const observeIntersection = useIntersectionObserver();
+  // const observeIntersection = useIntersectionObserver();
 
-  useEffect(() => {
-    observeIntersection("intro-layout");
-  }, [observeIntersection]);
+  // useEffect(() => {
+  //   observeIntersection("intro-layout");
+  // }, [observeIntersection]);
   return (
     <section className="intro-layout">
       <div className="">

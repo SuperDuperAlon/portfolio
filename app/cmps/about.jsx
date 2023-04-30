@@ -22,11 +22,11 @@ import {
 } from "react-icons/si";
 
 export function About() {
-  const observeIntersection = useIntersectionObserver();
+  // const observeIntersection = useIntersectionObserver();
 
-  useEffect(() => {
-    observeIntersection("section-layout");
-  }, [observeIntersection]);
+  // useEffect(() => {
+  //   observeIntersection("section-layout");
+  // }, [observeIntersection]);
 
   const icons = [
     { name: "Javascript (ES6+)", img: <SiJavascript /> },
