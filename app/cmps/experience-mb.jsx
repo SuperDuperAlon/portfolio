@@ -66,7 +66,7 @@ export function ExperienceMB() {
   ];
 
   return (
-    <section className="section-layout " id="experience" ref={ref}>
+    <section className="section-layout " id="experience">
       <h1 className="section-header">What I&lsquo;ve Done</h1>
       <div className="experience-section">
         <div>
