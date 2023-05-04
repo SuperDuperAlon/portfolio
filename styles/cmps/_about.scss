@@ -78,10 +78,6 @@
 }
 // }
 @media (max-width: $medium-breakpoint) {
-  .section-layout#about {
-    margin: 3rem 0;
-  }
-
   .about-section {
     display: flex;
     flex-direction: column;

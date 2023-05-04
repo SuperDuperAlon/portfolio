@@ -23,7 +23,8 @@
   .section-layout {
     display: flex;
     margin: 0;
-    > :last-child {
+    margin-bottom: 150px;
+    :last-child{
       margin-bottom: 0;
     }
   }
