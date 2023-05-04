@@ -6,7 +6,7 @@ export function Intro() {
 
   useEffect(() => {
     observeIntersection("intro-layout");
-  }, []);
+  }, [observeIntersection]);
   return (
     <section className="intro-layout">
       <div className="">

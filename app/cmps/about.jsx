@@ -26,7 +26,7 @@ export function About() {
 
   useEffect(() => {
     observeIntersection("section-layout");
-  }, []);
+  }, [observeIntersection]);
 
   const icons = [
     { name: "Javascript (ES6+)", img: <SiJavascript /> },
