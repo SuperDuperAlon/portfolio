@@ -7,7 +7,9 @@ export function Intro() {
   useEffect(() => {
     observeIntersection("intro-layout");
   }, [observeIntersection]);
-  return (
+
+  if(!observeIntersection) return <div>Loading..</div>
+  else return (
     <section className="intro-layout">
       <div className="">
         <h3 className="green">Hi, my name is</h3>
