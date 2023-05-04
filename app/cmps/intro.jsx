@@ -1,12 +1,7 @@
-import { useEffect } from "react";
-import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
+
 
 export function Intro() {
-  const observeIntersection = useIntersectionObserver();
 
-  useEffect(() => {
-    observeIntersection("intro-layout");
-  }, [observeIntersection]);
 
   if(!observeIntersection) return <div>Loading..</div>
   else return (

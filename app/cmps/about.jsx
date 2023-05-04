@@ -1,7 +1,5 @@
 import Image from "next/image";
 import alon from "../../public/assets/alon.jpg";
-import { useEffect } from "react";
-import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
 import { FaJava, FaReact } from "react-icons/fa";
 import {
   SiJavascript,
@@ -22,11 +20,6 @@ import {
 } from "react-icons/si";
 
 export function About() {
-  const observeIntersection = useIntersectionObserver();
-
-  useEffect(() => {
-    observeIntersection("section-layout");
-  }, [observeIntersection]);
 
   const icons = [
     { name: "Javascript (ES6+)", img: <SiJavascript /> },
@@ -48,8 +41,8 @@ export function About() {
     { name: "JQuery", img: <SiJquery /> },
   ];
 
-  if(!observeIntersection) return <div>Loading..</div>
-  else return (
+
+ return (
     <section className="section-layout" id="about">
       <div>
         <h1 className="section-header">About Me</h1>
