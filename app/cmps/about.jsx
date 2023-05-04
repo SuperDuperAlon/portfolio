@@ -48,7 +48,8 @@ export function About() {
     { name: "JQuery", img: <SiJquery /> },
   ];
 
-  return (
+  if(!observeIntersection) return <div>Loading..</div>
+  else return (
     <section className="section-layout" id="about">
       <div>
         <h1 className="section-header">About Me</h1>
