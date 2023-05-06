@@ -1,11 +1,6 @@
-
-
 export function Intro() {
-
-
-  if(!observeIntersection) return <div>Loading..</div>
-  else return (
-    <section className="intro-layout">
+  return (
+    <section className="intro-layout" id="about">
       <div className="">
         <h3 className="green">Hi, my name is</h3>
         <h1 className="big-heading light-slate mar-t24">
@@ -18,7 +13,7 @@ export function Intro() {
         </p>
         <button className="mar-t48">
           <a
-            href="https://www.dropbox.com/s/bvnx5by7z3f9xss/Alon%20Mlievski%20-%20Full%20Stack%20Developer.pdf"
+            href="./assets/alon-resume.pdf.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >

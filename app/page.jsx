@@ -1,8 +1,7 @@
-"use client";
+'use client'
 
 import React from "react";
 import { useState, useEffect } from "react";
-// import { observer } from "./utils/intersection-observer";
 import { About } from "./cmps/about";
 import { Contact } from "./cmps/contact";
 import { Experience } from "./cmps/experience";
