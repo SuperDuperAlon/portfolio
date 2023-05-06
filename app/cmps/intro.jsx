@@ -1,17 +1,47 @@
+import { motion } from "framer-motion";
+
 export function Intro() {
   return (
     <section className="intro-layout" id="about">
       <div className="">
-        <h3 className="green">Hi, my name is</h3>
-        <h1 className="big-heading light-slate mar-t24">
+        <motion.h3
+          className="green hidden"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.1 }}
+        >
+          Hi, my name is
+        </motion.h3>
+        <motion.h1
+          className="big-heading light-slate mar-t24"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2 }}
+        >
           Alon Mlievski<span className="dot">.</span>
-        </h1>
-        <h1 className="big-heading slate">I write and color blocks of code.</h1>
-        <p>
+        </motion.h1>
+        <motion.h1
+          className="big-heading slate"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3 }}
+        >
+          I write and color blocks of code.
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.4 }}
+        >
           I am a Full Stack Developer specializing in building and developing
           web applications.
-        </p>
-        <button className="mar-t48">
+        </motion.p>
+        <motion.button
+          className="mar-t48"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5 }}
+        >
           <a
             href="./assets/alon-resume.pdf.pdf"
             target="_blank"
@@ -19,7 +49,7 @@ export function Intro() {
           >
             My Resume
           </a>
-        </button>
+        </motion.button>
       </div>
     </section>
   );
