@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 import alon from "../../public/assets/alon.jpg";
 import { FaJava, FaReact } from "react-icons/fa";
 import {
@@ -20,6 +22,8 @@ import {
 } from "react-icons/si";
 
 export function About() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
   const icons = [
     { name: "Javascript (ES6+)", img: <SiJavascript /> },
@@ -42,11 +46,14 @@ export function About() {
   ];
 
   return (
-    <section
-      className="section-layout"
-      id="about"
-    >
-      <div>
+    <section ref={ref} className="section-layout" id="about">
+      <div
+        style={{
+          transform: isInView ? "none" : "translateX(-200px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+        }}
+      >
         <h1 className="section-header">About Me</h1>
         <div className="about-section">
           <div className="img-container">
