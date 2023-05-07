@@ -24,7 +24,7 @@ export function Projects() {
       description: "This website",
       url: "https://portfolio-superduperalon.vercel.app/",
       image: "/assets/Screenshots/portfolio.jpg",
-      stack: ["React", "Next.js", "Sass", "Javascript"],
+      stack: ["React", "Next.js", "Sass", "Javascript", "Framer-Motion"],
     },
     {
       name: "Minesweeper",
@@ -72,7 +72,12 @@ export function Projects() {
                     </div>
                     <div className="mar-b8">{project.description}</div>
                     <div className="web-img">
-                      <Image src={project.image} fill alt="project" className="proj-img" />
+                      <Image
+                        src={project.image}
+                        fill
+                        alt="project"
+                        className="proj-img"
+                      />
                     </div>
                     {project.stack.map((tech) => {
                       return (
