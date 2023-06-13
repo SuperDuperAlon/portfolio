@@ -20,6 +20,21 @@ export function Projects() {
       ],
     },
     {
+      name: "Boarder",
+      description: "Trello clone",
+      image: "/assets/Screenshots/boarder.jpg",
+      url: "https://boarder-flame.vercel.app/",
+      stack: [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Tailwind",
+        "Appwrite.io",
+        "Beautiful DnD",
+        "weHeadless UI",
+      ],
+    },
+    {
       name: "Web Portfolio",
       description: "This website",
       url: "https://portfolio-superduperalon.vercel.app/",
