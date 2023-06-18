@@ -31,7 +31,20 @@ export function Projects() {
         "Tailwind",
         "Appwrite.io",
         "Beautiful DnD",
-        "weHeadless UI",
+        "Headless UI",
+      ],
+    },
+    {
+      name: "Car Showcase",
+      description: "Full car showcase",
+      image: "/assets/Screenshots/car_app.jpg",
+      url: "https://car-showcase-six-tawny.vercel.app/",
+      stack: [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Tailwind",
+        "Headless UI",
       ],
     },
     {
