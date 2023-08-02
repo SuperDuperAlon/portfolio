@@ -36,20 +36,19 @@ export function Intro() {
           I am a Full Stack Developer specializing in building and developing
           web applications.
         </motion.p>
-        <motion.button
-          className="mar-t48"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5 }}
+        <a
+          href="./assets/alon-resume.pdf.pdf"
+          download
         >
-          <a
-            href="./assets/alon-resume.pdf.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
+          <motion.button
+            className="mar-t48"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5 }}
           >
             My Resume
-          </a>
-        </motion.button>
+          </motion.button>
+        </a>
       </div>
     </section>
   );
