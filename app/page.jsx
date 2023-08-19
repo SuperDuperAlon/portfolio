@@ -35,7 +35,6 @@ export default function Home() {
 
   return (
     <>
-      {/* <Header /> */}
       {!isMobile && (
         <section className="index-layout">
           <Intro />
@@ -44,7 +43,6 @@ export default function Home() {
           <Projects />
           <Contact />
           <Social />
-          {/* <Footer /> */}
         </section>
       )}
 

@@ -54,35 +54,30 @@ export function About() {
           transition: "all 0.9s 0.5s",
         }}
       >
-        <h1 className="section-header">About Me</h1>
         <div className="about-section">
           <div className="img-container">
             <Image
               src={alon}
-              width={100}
-              height={100}
+              width={400}
+              height={400}
               className="about-img"
               alt="about-me-photo"
             />
           </div>
-          <div>
-            <p>
-              A marketing professional turned Full Stack Developer who likes to
-              put colors on blocks of code. My main stack is JavaScript (ES6+),
-              React, Node, Sass, and MongoDB. As a Coding Academy Bootcamp
-              graduate, I&apos;m well-trained in building well-designed E2E web
-              apps.
-            </p>
-            <p>
-              I come with varied experience from my past endeavors where I was a
-              significant part of the companies I&apos;ve worked at and helped
-              them grow their revenue and clientele. I&apos;m an organized,
-              fast-learning autodidact, who&apos;s working great in a team,
-              knowledgeable, and who&apos;s not afraid of taking challenges.
-            </p>
-          </div>
-        </div>
-        <div className="mar-b16">
+          <p>
+            A marketing professional turned Full Stack Developer who likes to
+            put colors on blocks of code. My main stack is JavaScript (ES6+),
+            React, Node, Sass, and MongoDB. As a Coding Academy Bootcamp
+            graduate, I&apos;m well-trained in building well-designed E2E web
+            apps.
+          </p>
+          <p>
+            I come with varied experience from my past endeavors where I was a
+            significant part of the companies I&apos;ve worked at and helped
+            them grow their revenue and clientele. I&apos;m an organized,
+            fast-learning autodidact, who&apos;s working great in a team,
+            knowledgeable, and who&apos;s not afraid of taking challenges.
+          </p>
           <div className="stack-list mar-b16">
             {icons.map((icon, idx) => {
               return (
