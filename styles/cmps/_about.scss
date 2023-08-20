@@ -3,18 +3,11 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  // grid-template-columns: repeat(2, 1fr);
+
   p {
     display: flex;
     color: $slate;
-  }
-  > :last-child {
-    // width: 100%;
-    // display: flex;
-    // > {
-    //   justify-content: end;
-    // }
-    margin: auto 0;
+    justify-content: center;
   }
 }
 
@@ -27,6 +20,7 @@
   from {
     transform: translateX(-100%);
   }
+
   to {
     transform: translateX(0%);
   }
@@ -56,18 +50,22 @@
   grid-auto-columns: minmax(100px, 1fr);
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 10px;
-  > * {
+
+  >* {
     place-items: center;
   }
 }
+
 .tech-stack-list {
   color: $green;
   display: flex;
   flex-direction: column;
-  > * {
+
+  >* {
     margin: auto;
   }
-  > svg {
+
+  >svg {
     margin: auto 1px;
     height: 3rem;
     width: 3rem;
@@ -77,6 +75,7 @@
     color: white;
   }
 }
+
 // }
 @media (max-width: $medium-breakpoint) {
   .about-section {

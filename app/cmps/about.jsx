@@ -65,18 +65,13 @@ export function About() {
             />
           </div>
           <p>
-            A marketing professional turned Full Stack Developer who likes to
-            put colors on blocks of code. My main stack is JavaScript (ES6+),
-            React, Node, Sass, and MongoDB. As a Coding Academy Bootcamp
-            graduate, I&apos;m well-trained in building well-designed E2E web
-            apps.
+A marketing professional turned Full Stack Developer who&apos;s passionate about using code to create beautiful and seamless digital solutions. As a Coding Academy graduate, my primary stack is MERN, although these days I&apos;m incorporating more skills into my digital tool belt.
           </p>
           <p>
-            I come with varied experience from my past endeavors where I was a
-            significant part of the companies I&apos;ve worked at and helped
-            them grow their revenue and clientele. I&apos;m an organized,
-            fast-learning autodidact, who&apos;s working great in a team,
-            knowledgeable, and who&apos;s not afraid of taking challenges.
+          I come with varied experience and soft skills from my past endeavors where I was a significant part of the companies I&apos;ve worked at, helping them grow their revenue and clientele. 
+          </p>
+          <p>
+          An ardent and organized autodidact, who&apos;s truly passionate about learning and growing as a client-side developer.
           </p>
           <div className="stack-list mar-b16">
             {icons.map((icon, idx) => {
