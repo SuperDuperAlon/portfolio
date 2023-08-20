@@ -34,8 +34,8 @@
 }
 
 .about-img {
-  height: 400px;
-  width: 400px;
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
   aspect-ratio: 16/9;
   display: flex;
@@ -93,6 +93,8 @@
   }
 
   .about-img {
+    height: 400px;
+    width: 400px;
     border-radius: 50%;
   }
 }
