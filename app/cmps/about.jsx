@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { useInView } from "framer-motion";
 import alon from "../../public/assets/alon.jpg";
 import { FaJava, FaReact } from "react-icons/fa";
+import { GiSloth } from "react-icons/gi";
 import {
   SiJavascript,
   SiTypescript,
@@ -19,6 +20,9 @@ import {
   SiHtml5,
   SiBootstrap,
   SiJquery,
+  SiAppwrite,
+  SiHeadlessui,
+  SiMui,
 } from "react-icons/si";
 
 export function About() {
@@ -38,7 +42,7 @@ export function About() {
     { name: "Vue", img: <SiVuedotjs /> },
     { name: "Angular", img: <SiAngular /> },
     { name: "Redux", img: <SiRedux /> },
-    { name: "Zustand", img: <SiRedux /> },
+    { name: "Zustand", img: <GiSloth /> },
   ]
 
   const styling = [
@@ -46,8 +50,8 @@ export function About() {
     { name: "Sass", img: <SiSass /> },
     { name: "Bootstrap", img: <SiBootstrap /> },
     { name: "JQuery", img: <SiJquery /> },
-    { name: "Material UI", img: <SiJquery /> },
-    { name: "Headless UI", img: <SiJquery /> },
+    { name: "Material UI", img: <SiMui /> },
+    { name: "Headless UI", img: <SiHeadlessui /> },
   ]
 
   const back = [
@@ -55,6 +59,7 @@ export function About() {
     { name: "Express.js", img: <SiExpress /> },
     { name: "SQL", img: <SiSqlite /> },
     { name: "MongoDB", img: <SiMongodb /> },
+    { name: "Appwrite", img: <SiAppwrite/> },
 
   ];
 
