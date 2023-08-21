@@ -44,14 +44,19 @@
 }
 
 .stack-list {
-  display: grid;
-  grid-auto-rows: 100px;
-  grid-auto-columns: minmax(100px, 1fr);
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  display: flex;
   gap: 10px;
+  justify-content: space-around;
+}
 
-  >* {
-    place-items: center;
+.test {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  gap: 2rem;
+  > h1 {
+    font-size: 2rem;
   }
 }
 
@@ -59,13 +64,9 @@
   color: $green;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 
-  >* {
-    margin: auto;
-  }
-
-  >svg {
-    margin: auto 1px;
+  >*>svg {
     height: 3rem;
     width: 3rem;
   }
