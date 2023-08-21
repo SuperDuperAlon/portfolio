@@ -65,13 +65,13 @@ export function About() {
             />
           </div>
           <p>
-A marketing professional turned Full Stack Developer who&apos;s passionate about using code to create beautiful and seamless digital solutions. As a Coding Academy graduate, my primary stack is MERN, although these days I&apos;m incorporating more skills into my digital tool belt.
+A marketing professional turned Full Stack Developer who&apos;s <span className="highlight">passionate</span> about using code to create beautiful and seamless digital solutions. As a Coding Academy graduate, my primary stack is MERN, although these days I&apos;m incorporating more skills into my digital tool belt.
           </p>
           <p>
-          I come with varied experience and soft skills from my past endeavors where I was a significant part of the companies I&apos;ve worked at, helping them grow their revenue and clientele. 
+          I come with varied experience and soft skills from my past endeavors where I was a <span className="highlight">significant part</span> of the companies I&apos;ve worked at, helping them grow their revenue and clientele. 
           </p>
           <p>
-          An ardent and organized autodidact, who&apos;s truly passionate about learning and growing as a client-side developer.
+          An ardent and <span className="highlight">organized autodidact</span>, who&apos;s truly passionate about learning and growing as a client-side developer.
           </p>
           <div className="stack-list mar-b16">
             {icons.map((icon, idx) => {
