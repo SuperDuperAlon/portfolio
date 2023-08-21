@@ -18,7 +18,7 @@ export default function Home() {
   if (typeof window !== "undefined") {
     size = window.innerWidth;
   } else {
-    console.error("Please");
+    console.error(error);
   }
 
   const MOBILE_WIDTH = 687;
