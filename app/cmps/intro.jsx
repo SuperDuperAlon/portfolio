@@ -37,7 +37,7 @@ export function Intro() {
           web applications.
         </motion.p>
         <a
-          href="./assets/alon_mlievski.pdf"
+          href="./assets/Alon Mlievski - Full Stack Developer"
           download
         >
           <motion.button
