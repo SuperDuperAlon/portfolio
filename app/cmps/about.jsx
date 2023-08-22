@@ -2,76 +2,22 @@ import Image from "next/image";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 import alon from "../../public/assets/alon.jpg";
-import { FaJava, FaReact } from "react-icons/fa";
-import { GiSloth } from "react-icons/gi";
-import {
-  SiJavascript,
-  SiTypescript,
-  SiMongodb,
-  SiNodedotjs,
-  SiVuedotjs,
-  SiSass,
-  SiExpress,
-  SiSqlite,
-  SiAngular,
-  SiRedux,
-  SiNextdotjs,
-  SiCss3,
-  SiHtml5,
-  SiBootstrap,
-  SiJquery,
-  SiAppwrite,
-  SiHeadlessui,
-  SiMui,
-} from "react-icons/si";
+import { languages, frameworks, styling, back }  from "../data/stack";
+
 
 export function About() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
-  const languages = [
-    { name: "HTML", img: <SiHtml5 /> },
-    { name: "Javascript (ES6+)", img: <SiJavascript /> },
-    { name: "Typescript", img: <SiTypescript /> },
-    { name: "Java", img: <FaJava /> },
-  ]
-
-  const frameworks = [
-    { name: "React", img: <FaReact /> },
-    { name: "Next.js", img: <SiNextdotjs /> },
-    { name: "Vue", img: <SiVuedotjs /> },
-    { name: "Angular", img: <SiAngular /> },
-    { name: "Redux", img: <SiRedux /> },
-    { name: "Zustand", img: <GiSloth /> },
-  ]
-
-  const styling = [
-    { name: "CSS", img: <SiCss3 /> },
-    { name: "Sass", img: <SiSass /> },
-    { name: "Bootstrap", img: <SiBootstrap /> },
-    { name: "JQuery", img: <SiJquery /> },
-    { name: "Material UI", img: <SiMui /> },
-    { name: "Headless UI", img: <SiHeadlessui /> },
-  ]
-
-  const back = [
-    { name: "Node.js", img: <SiNodedotjs /> },
-    { name: "Express.js", img: <SiExpress /> },
-    { name: "SQL", img: <SiSqlite /> },
-    { name: "MongoDB", img: <SiMongodb /> },
-    { name: "Appwrite", img: <SiAppwrite/> },
-
-  ];
-
   return (
     <section ref={ref} className="section-layout" id="about">
-      <div
+      {/* <div
         style={{
           transform: isInView ? "none" : "translateY(200px)",
           opacity: isInView ? 1 : 0,
           transition: "all 0.9s 0.5s",
         }}
-      >
+      > */}
         <div className="about-section">
           <div className="img-container">
             <Image
@@ -153,7 +99,7 @@ export function About() {
             </div>
           </div>
         </div>
-      </div>
+      {/* </div> */}
     </section>
   );
 }

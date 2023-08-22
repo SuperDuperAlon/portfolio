@@ -45,7 +45,7 @@
 
 .stack-list {
   display: flex;
-  gap: 10px;
+  gap: 1rem;
   justify-content: space-around;
 }
 
@@ -99,6 +99,10 @@
   }
 
   .stack-list {
-    flex-direction: column;
+    // flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .tech-stack-list {
+    width: fit-content;
   }
 }
