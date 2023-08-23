@@ -13,7 +13,7 @@ export function Projects() {
               return (
                 <li key={idx}>
                   <section>
-                    <div className="fs20 mar-b4">
+                    <div className="fs28 mar-b4 bold">
                       <a href={`${project.url}`}>{project.name}</a>
                     </div>
                     <div className="mar-b8">{project.description}</div>
@@ -22,7 +22,6 @@ export function Projects() {
                         width="0"
                         height="0"
                         sizes="100vw"
-                        style={{  }}
                         alt="project"
                         className="proj-img"
                       />

@@ -33,7 +33,7 @@ const projects = [
     {
       name: "Anyplace",
       description:
-        "An E2E Airbnb clone using client and server side tools. Was built as a final project at Coding Academy",
+        "An e2e Airbnb clone using client and server side tools. Was built as a final project at Coding Academy with my partners Noah Markovich and Yarden Zeron",
       image: "/assets/Screenshots/anyplace.jpg",
       url: "https://anyplace-h06h.onrender.com/",
       stack: [
@@ -49,7 +49,7 @@ const projects = [
     },
     {
       name: "Boarder",
-      description: "Trello clone",
+      description: "A Trello clone built using Sonny Sangha's Trello tutorial. In this tutorial I learned how to use technologies such as Tailwind CSS, Zustand, Appwrite, Typescript, etc.",
       image: "/assets/Screenshots/boarder.jpg",
       url: "https://boarder-flame.vercel.app/",
       stack: [
@@ -64,7 +64,7 @@ const projects = [
     },
     {
       name: "Car Showcase",
-      description: "Full car showcase",
+      description: "A full car showcase built using Javascript Mastery's tutorial. In this project I learned how to use Headless UI and Typescript",
       image: "/assets/Screenshots/car_app.jpg",
       url: "https://car-showcase-six-tawny.vercel.app/",
       stack: [
