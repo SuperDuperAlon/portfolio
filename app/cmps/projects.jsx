@@ -17,6 +17,7 @@ export function Projects() {
                       <a href={`${project.url}`}>{project.name}</a>
                     </div>
                     <div className="mar-b8">{project.description}</div>
+                    <a href={`${project.url}`}>
                       <Image
                         src={project.image}
                         width="0"
@@ -24,7 +25,8 @@ export function Projects() {
                         sizes="100vw"
                         alt="project"
                         className="proj-img"
-                      />
+                        />
+                        </a>
                     {project.stack.map((tech) => {
                       return (
                         <li key={tech.idx} className="stack-list">
