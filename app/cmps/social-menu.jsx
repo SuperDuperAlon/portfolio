@@ -13,10 +13,10 @@ export function Social() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: `${icon.delay}` }}
+                href={icon.link} 
+                target="_blank"
               >
-                <a href={icon.link} target="_blank">
-                  {icon.icon}
-                </a>
+                {icon.icon}
               </motion.a>
             </li>
 
