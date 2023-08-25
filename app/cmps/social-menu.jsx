@@ -1,4 +1,5 @@
 import { social } from "../data/data";
+import { motion } from "framer-motion";
 
 export function Social() {
 
@@ -8,10 +9,17 @@ export function Social() {
         {social.map((icon, idx) => {
           return (
             <li className="clean-list social-list" key={idx}>
-              <a href={icon.link} target="_blank">
-                {icon.icon}
-              </a>
+              <motion.a
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: `${icon.delay}` }}
+              >
+                <a href={icon.link} target="_blank">
+                  {icon.icon}
+                </a>
+              </motion.a>
             </li>
+
           );
         })}
       </ul>

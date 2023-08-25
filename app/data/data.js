@@ -6,26 +6,31 @@ const social = [
         name: "gh",
         icon: <FaGithub />,
         link: "https://github.com/SuperDuperAlon",
+        delay: 0.6
     },
     {
         name: "li",
         icon: <FaLinkedin />,
         link: "https://www.linkedin.com/in/alon-mlievski-6756aa74/",
+                delay: 0.7
     },
     {
         name: "wa",
         icon: <FaWhatsapp />,
         link: "https://wa.me/972504438778",
+        delay: 0.8
     },
     {
         name: "mail",
         icon: <FiSend />,
         link: "mailto:alonmlievski@gmail.com",
+        delay: 0.9
     },
     {
         name: "fb",
         icon: <FaFacebook />,
         link: "https://www.facebook.com/alon.mlievski",
+                delay: 1.0
     },
 ];
 
