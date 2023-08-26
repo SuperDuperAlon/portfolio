@@ -51,7 +51,11 @@ export function About() {
             An ardent and <span className="highlight">organized autodidact</span>, who&apos;s truly passionate about learning and growing as a client-side developer.
           </p>
 
-          <div className="test">
+          <div className="test"
+            style={{
+              opacity: isInView ? 1 : 0,
+              transition: "all 0.9s 0.5s",
+            }}>
             <h1>Languages</h1>
             <div className="stack-list mar-b16">
               {languages.map((icon, idx) => {
@@ -66,7 +70,11 @@ export function About() {
               })}
             </div>
           </div>
-          <div className="test">
+          <div className="test"
+            style={{
+              opacity: isInView ? 1 : 0,
+              transition: "all 0.9s 0.5s",
+            }}>
             <h1>Frameworks</h1>
             <div className="stack-list mar-b16">
               {frameworks.map((icon, idx) => {
@@ -81,7 +89,11 @@ export function About() {
               })}
             </div>
           </div>
-          <div className="test">
+          <div className="test"
+            style={{
+              opacity: isInView ? 1 : 0,
+              transition: "all 0.9s 0.5s",
+            }}>
             <h1>Styling</h1>
             <div className="stack-list mar-b16">
               {styling.map((icon, idx) => {
@@ -96,7 +108,11 @@ export function About() {
               })}
             </div>
           </div>
-          <div className="test">
+          <div className="test"
+            style={{
+              opacity: isInView ? 1 : 0,
+              transition: "all 0.9s 0.5s",
+            }}>
             <h1>Backend</h1>
             <div className="stack-list mar-b16">
               {back.map((icon, idx) => {
