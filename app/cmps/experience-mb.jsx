@@ -15,7 +15,7 @@ export function ExperienceMB() {
                     <h2 className="fs18 green mar-b4">{exp.name}</h2>
                     <h4 className="fs14">{exp.date}</h4>
                     </summary>
-                    <ul className="mar-t8">
+                    <ul className="experience-list">
                 {experience[idx].actions.map((action, idx) => {
                   return (
                     <li key={idx} className="">
