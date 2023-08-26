@@ -7,15 +7,27 @@ export function ExperienceMB() {
     <section className="section-layout" id="experience">
       <h1 className="section-header">What I&apos;ve Done</h1>
       <div className="experience-section">
-            {experience.map((exp) => (
+            {experience.map((exp, idx) => (
               <>
                 <details className="mb-exp-details">
                   <summary>
-                    <h1 className="fs20 light-slate mb-8">{exp.position}</h1>
-                    <h2 className="fs14 mb-4">{exp.name}</h2>
-                    <h4 className="fs12">{exp.date}</h4>
+                    <h1 className="fs28 light-slate mar-b8">{exp.position}</h1>
+                    <h2 className="fs18 green mar-b4">{exp.name}</h2>
+                    <h4 className="fs14">{exp.date}</h4>
                     </summary>
-                  tatata
+                    <ul className="mar-t8">
+                {experience[idx].actions.map((action, idx) => {
+                  return (
+                    <li key={idx} className="">
+                      {" "}
+                      {/* <span className="green">
+                        <RxTriangleRight />
+                      </span> */}
+                      {action}
+                    </li>
+                  );
+                })}
+              </ul>
                 </details>
               </>
             ))}
