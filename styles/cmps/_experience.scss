@@ -1,10 +1,12 @@
 .experience-section {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  > * {
+
+  >* {
     margin: 0 2rem 2rem 0;
   }
-  > ul {
+
+  >ul {
     display: flex;
     flex-direction: column;
   }
@@ -13,6 +15,7 @@
 .btn-exp {
   width: 100%;
   border: none;
+
   &:focus {
     background-color: rgba($color: $slate, $alpha: 0.3);
   }
@@ -22,7 +25,7 @@
   display: flex;
   margin-bottom: 2px;
 
-  > span {
+  >span {
     display: flex;
     margin: auto 1px;
   }
@@ -36,31 +39,32 @@
   .experience-section {
     display: flex;
     flex-direction: column;
-    > * {
+
+    >* {
       margin: 1rem 0;
     }
   }
-}
 
-.mb-exp-details {
-  border: 1px solid $green;
-  border-radius: 12px;
-  padding: 1rem 2rem;
-  
->summary{
-list-style: none;
-display: flex;
-flex-direction: column;
-}
-}
+  .mb-exp-details {
+    border: 1px solid $green;
+    border-radius: 12px;
+    padding: 1rem 2rem;
 
-.experience-list {
-  margin-top: 0.75rem;
-  display: flex;
-  flex-direction: column;
-  row-gap: 0.5rem;
+    >summary {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+    }
+  }
 
-  li::marker {
-    color: $green;
+  .experience-list {
+    margin-top: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+
+    li::marker {
+      color: $green;
+    }
   }
 }
