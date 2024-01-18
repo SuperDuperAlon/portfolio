@@ -1,4 +1,4 @@
 1. import resizing method from yomama projects to see if it fixes hydration issues on mobile version
-2. adjust position of the triangles in the experrience section
+2. adjust position of the triangles in the experience section
 3. restructure the the skills section to fit the current CV
-4. replace the CV
+4. set hosting to the domain
