@@ -27,9 +27,9 @@ export function Projects() {
                         className="proj-img"
                         />
                         </a>
-                    {project.stack.map((tech) => {
+                    {project.stack.map((tech, idx) => {
                       return (
-                        <li key={tech.idx} className="stack-list">
+                        <li key={idx} className="stack-list">
                           {tech}
                         </li>
                       );

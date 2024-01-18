@@ -5,13 +5,10 @@ import { experience } from "../data/data";
 export function Experience() {
   const [currentItem, setCurrentItem] = useState(0);
   
-
   function handleChange(num) {
-    console.log(num);
     setCurrentItem(num);
   }
-  // if (!experience[0]) console.log("experience  ");
-  // else
+
   return (
     <section className="section-layout" id="experience">
       <div className="observed">
@@ -20,11 +17,9 @@ export function Experience() {
           <ul className="clean-list">
             {experience.map((button, idx) => {
               return (
-                <>
-                  <button className="btn-exp" onClick={() => handleChange(idx)}>
-                    <li>{button.name}</li>
+                  <button key={idx} className="btn-exp" onClick={() => handleChange(idx)}>
+                    <div>{button.name}</div>
                   </button>
-                </>
               );
             })}
           </ul>
