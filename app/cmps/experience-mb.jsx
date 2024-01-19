@@ -1,5 +1,6 @@
 import { RxTriangleRight } from "react-icons/rx";
 import { experience } from "../data/data";
+import React from "react";
 
 export function ExperienceMB() {
 
@@ -8,7 +9,7 @@ export function ExperienceMB() {
       <h1 className="section-header">What I&apos;ve Done</h1>
       <div className="experience-section">
             {experience.map((exp, idx) => (
-              <>
+              <React.Fragment key={idx}>
                 <details className="mb-exp-details">
                   <summary>
                     <h1 className="fs28 light-slate mar-b8">{exp.position}</h1>
@@ -29,7 +30,7 @@ export function ExperienceMB() {
                 })}
               </ul>
                 </details>
-              </>
+              </React.Fragment>
             ))}
       </div>
     </section>
