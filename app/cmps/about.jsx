@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 import alon from "../../public/assets/alon.jpg";
-import { languages, frameworks, styling, back } from "../data/stack";
+import { front, back , others} from "../data/stack";
 
 
 export function About() {
@@ -56,47 +56,9 @@ export function About() {
               opacity: isInView ? 1 : 0,
               transition: "all 0.9s 0.5s",
             }}>
-            <h1>Languages</h1>
+            <h1>Frontend</h1>
             <div className="stack-list mar-b16">
-              {languages.map((icon, idx) => {
-                return (
-                  <div className="tech-stack-list" key={idx}>
-                    <div>
-                      {icon.img}
-                    </div>
-                    <div>{icon.name}</div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-          <div className="test"
-            style={{
-              opacity: isInView ? 1 : 0,
-              transition: "all 0.9s 0.5s",
-            }}>
-            <h1>Frameworks</h1>
-            <div className="stack-list mar-b16">
-              {frameworks.map((icon, idx) => {
-                return (
-                  <div className="tech-stack-list" key={idx}>
-                    <div>
-                      {icon.img}
-                    </div>
-                    <div>{icon.name}</div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-          <div className="test"
-            style={{
-              opacity: isInView ? 1 : 0,
-              transition: "all 0.9s 0.5s",
-            }}>
-            <h1>Styling</h1>
-            <div className="stack-list mar-b16">
-              {styling.map((icon, idx) => {
+              {front.map((icon, idx) => {
                 return (
                   <div className="tech-stack-list" key={idx}>
                     <div>
@@ -116,6 +78,25 @@ export function About() {
             <h1>Backend</h1>
             <div className="stack-list mar-b16">
               {back.map((icon, idx) => {
+                return (
+                  <div className="tech-stack-list" key={idx}>
+                    <div>
+                      {icon.img}
+                    </div>
+                    <div>{icon.name}</div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+          <div className="test"
+            style={{
+              opacity: isInView ? 1 : 0,
+              transition: "all 0.9s 0.5s",
+            }}>
+            <h1>Misc.</h1>
+            <div className="stack-list mar-b16">
+              {others.map((icon, idx) => {
                 return (
                   <div className="tech-stack-list" key={idx}>
                     <div>
