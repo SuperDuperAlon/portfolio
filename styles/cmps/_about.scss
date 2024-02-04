@@ -1,4 +1,3 @@
-// @media (min-width: $x-large-breakpoint) {
 .about-section {
   display: flex;
   flex-direction: column;
@@ -78,15 +77,13 @@
   }
 }
 
-// }
 @media (max-width: $medium-breakpoint) {
   .about-section {
     display: flex;
     flex-direction: column;
-
-    > :nth-child(2) {
+    
+    > p {
       margin-left: 0;
-      text-align: justify;
     }
   }
 
@@ -101,10 +98,11 @@
   }
 
   .stack-list {
-    // flex-direction: column;
     flex-wrap: wrap;
+    column-gap: 0;
   }
+
   .tech-stack-list {
-    width: fit-content;
+    width: 33%;
   }
 }
