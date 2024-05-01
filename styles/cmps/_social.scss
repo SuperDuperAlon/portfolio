@@ -2,20 +2,23 @@
   position: fixed;
   height: 100%;
   display: flex;
-  > ul {
+
+  >ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: auto 0;
   }
+
   right: 3%;
 }
 
 .social-list a {
-  > svg {
+  >svg {
     height: 1.5rem;
     width: 1.5rem;
     margin-bottom: 1rem;
+
     &:hover {
       scale: 1.1;
     }
@@ -24,17 +27,35 @@
 
 @media (max-width: $medium-breakpoint) {
   .social {
-    position: static;
+    position: sticky;
+    bottom: 0;
+    right: auto;
     display: flex;
+    justify-content: space-around;
+    min-width: calc(100vw - 48px);
+    background-color: $navy;
+
     ul {
       margin: 0 auto;
       flex-direction: row;
-      justify-content: center;
+      justify-content: space-between;
       margin-block-end: 0;
       margin-block-start: 0;
       padding-inline-start: 0;
+      gap: 1.5rem;
+
       li {
-        margin: 4px;
+        display: flex;
+        height: 12vh;
+
+        a {
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      svg {
+        margin-bottom: 0;
       }
     }
   }
