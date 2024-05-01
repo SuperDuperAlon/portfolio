@@ -46,7 +46,7 @@ export function Intro() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
           >
-            My Resume
+            Download Resume
           </motion.button>
         </a>
       </div>

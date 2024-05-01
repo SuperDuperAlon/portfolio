@@ -125,10 +125,10 @@ const projects = [
       position: "Publishers Account Manager",
       date: "June 2021 - October 2022",
       actions: [
-        "Managing multiple video publisher accounts, both Israel-based and international",
-        "Analyzing and reporting Video Ads data and KPIs from various ad-servers",
-        "Cultivating relationships and negotiating with publishers in three languages",
-        "Managing Ad-ops personnel",
+        "Managing premium international and local supply-side accounts",
+        "Researching ad-servers - Found a way to keep the company compliant with a premium SSP, generating a 6-digit profit in 7 months",
+        "Assisting and mentoring fellow junior team members",
+        "While at the company, we've managed to break monthly, quarterly, and yearly profit records",
       ],
     },
     {
@@ -137,10 +137,10 @@ const projects = [
       position: "Publishers Account Manager",
       date: "July 2019 - March 2020",
       actions: [
-        "Managing multiple video publisher accounts, both Israel-based and international",
-        "Analyzing and reporting Video Ads data and KPIs from various ad-servers",
-        "Cultivating relationships and negotiating with publishers in three languages",
-        "Managing Ad-ops personnel",
+        "Managing more than 50 international and local accounts supply side accounts",
+        "Generating data-based actionable items to increase revenue and ROI",
+        "Grew mutual activity by 15% with more than 30 accounts",
+        "While at the company - we've managed to break consecutive profit records",
       ],
     },
     {
@@ -150,9 +150,9 @@ const projects = [
       date: "August 2015 - June 2019",
       actions: [
         "Co-leading the international activity at the agency",
-        "Forming relationships with journalists and analysts throughout the globe",
-        "Working with C-level executives directly providing vast media exposure in outlets such as TechCrunch, Wired, Forbes, etc.",
-        "During my time in the company we've managed to double our clientele",
+        "Forming relationships with tech journalists and analysts across the globe",
+        "Generating media exposure in 10+ languages, and 50+ countries. In outlets such as Techcrunch, Forbes, etc.",
+        "While at the company - its clientele doubled, a 100% increase",
       ],
     },
     {
@@ -162,9 +162,9 @@ const projects = [
       date: "October 2014 - January 2015",
       actions: [
         "Co-managing Meretz's electoral campaign in southern Israel",
-        "Coordinating activities and events for candidates members of the Knesset",
+        "Working with members of Knesset and their advisors",
+        "Coordinating activities and events for candidates",
         "Managing a team of 20 volunteers",
-        "After the campaign I was a parliamentary intern at MK Ilan Gilon’s chambers for five months",
       ],
     },
     {
@@ -173,9 +173,9 @@ const projects = [
       position: "Head of Communications",
       date: "March 2014 - July 2015",
       actions: [
-        "Part of the movements' managing team",
-        "leading the media front in communal projects in of the movement, both on social media and the local press",
-        "Promoting various activities: youth oriented politics course, an orthodox-secular religious seminary, etc.",
+        "Part of the managing team, leading the media front in communal projects in the movement",
+        "Creating and managing content for social media",
+        "Promoting and leading various activities: youth-oriented politics course, social media campaign against the local water company, an orthodox-secular religious seminary, etc.",
       ],
     },
   ];
