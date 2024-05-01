@@ -33,7 +33,7 @@ export function Intro() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
         >
-          I am a Full Stack Developer specializing in building and developing
+          I am a Software Developer specializing in building and developing
           web applications.
         </motion.p>
         <a
