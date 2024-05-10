@@ -3,11 +3,11 @@ import '@/styles/globals.scss'
 
 export const metadata = {
   title: 'Alon Mlievski',
-  description: 'The best',
+  description: 'Alon Mlievski\'s Professional Portfolio',
 }
- 
+
 export default function RootLayout({ children }) {
- return (
+  return (
     <html lang="en">
       <body>{children}</body>
     </html>
