@@ -1,3 +1,0 @@
-1. import resizing method from yomama projects to see if it fixes hydration issues on mobile version
-2. Fix hydration on mobile version
-3. set hosting to the domain
