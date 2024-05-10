@@ -30,8 +30,6 @@ import {
 } from "react-icons/si";
 import { CgMonday } from "react-icons/cg";
 
-
-
 const others = [
   { name: "Postman", img: <SiPostman /> },
   { name: "Git", img: <SiGit /> },
@@ -68,12 +66,6 @@ const back = [
   { name: "MongoDB", img: <SiMongodb /> },
   { name: "Appwrite", img: <SiAppwrite /> },
   { name: "SQL", img: <SiSqlite /> },
-
 ];
-
-
-
-
-
 
 export { front, back, others } 

@@ -4,7 +4,6 @@ import { useInView } from "framer-motion";
 import alon from "../../public/assets/alon.jpg";
 import { front, back, others } from "../data/stack";
 
-
 export function About() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -13,7 +12,6 @@ export function About() {
     <section ref={ref} className="section-layout" id="about">
       <div>
         <div className="about-section">
-
           <p
             style={{
               opacity: isInView ? 1 : 0,
@@ -51,7 +49,6 @@ export function About() {
           >
             An ardent and <span className="highlight">organized autodidact</span>, who&apos;s truly passionate about learning and growing as a client-side developer.
           </p> */}
-
           <div className="test"
             style={{
               opacity: isInView ? 1 : 0,

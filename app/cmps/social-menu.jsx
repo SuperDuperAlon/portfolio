@@ -19,7 +19,6 @@ export function Social() {
                 {icon.icon}
               </motion.a>
             </li>
-
           );
         })}
       </ul>

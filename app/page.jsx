@@ -6,9 +6,7 @@ import { About } from "./cmps/about";
 import { Contact } from "./cmps/contact";
 import { Experience } from "./cmps/experience";
 import { Intro } from "./cmps/intro";
-import { Header } from "./cmps/header";
 import { Projects } from "./cmps/projects";
-import { Footer } from "./cmps/footer";
 import { Social } from "./cmps/social-menu";
 import { ExperienceMB } from "./cmps/experience-mb";
 
@@ -45,7 +43,6 @@ export default function Home() {
           <Social />
         </section>
       )}
-
       {isMobile && (
         <section className="index-layout">
           <Intro />

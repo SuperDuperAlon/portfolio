@@ -42,7 +42,6 @@ export function Intro() {
             download
           >
             <motion.button
-              
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
