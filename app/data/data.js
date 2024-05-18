@@ -6,32 +6,30 @@ const social = [
     name: "gh",
     icon: <FaGithub />,
     link: "https://github.com/SuperDuperAlon",
-    delay: 0.6
+    delay: 0.6,
+    title: "Github"
   },
   {
     name: "li",
     icon: <FaLinkedin />,
     link: "https://www.linkedin.com/in/alon-mlievski-6756aa74/",
-    delay: 0.7
+    delay: 0.7,
+    title: "Linkedin"
   },
   {
     name: "wa",
     icon: <FaWhatsapp />,
     link: "https://wa.me/972504438778",
-    delay: 0.8
+    delay: 0.8,
+    title: "Whatsapp"
   },
   {
     name: "mail",
     icon: <FiSend />,
     link: "mailto:alonmlievski@gmail.com",
-    delay: 0.9
-  },
-  {
-    name: "fb",
-    icon: <FaFacebook />,
-    link: "https://www.facebook.com/alon.mlievski",
-    delay: 1.0
-  },
+    delay: 0.9,
+    title: "Email"
+  }
 ];
 
 const projects = [

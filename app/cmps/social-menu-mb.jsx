@@ -20,7 +20,7 @@ export function Social_MB() {
                     <ul className="social-icons">
                         {social.map((icon, idx) => {
                             return (
-                                <ButtonCmp className={`social-icon ${showIcons ? `open` : `close`}`} onClick={toggleIcons} key={idx}>
+                                <ButtonCmp className={`social-icon ${showIcons ? `open` : `close`}`} onClick={() => window.open(`${icon.link}`, '_blank')} key={idx} title={`${icon.title}`}>
                                     {icon.icon}
                                 </ButtonCmp>
                             );
