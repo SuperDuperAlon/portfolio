@@ -9,6 +9,7 @@ import { Intro } from "./cmps/intro";
 import { Projects } from "./cmps/projects";
 import { Social } from "./cmps/social-menu";
 import { ExperienceMB } from "./cmps/experience-mb";
+import { Social_MB } from "./cmps/social-menu-mb";
 
 export default function Home() {
   var size = undefined;
@@ -40,7 +41,6 @@ export default function Home() {
           <Experience />
           <Projects />
           <Contact />
-          <Social />
         </section>
       )}
       {isMobile && (
@@ -50,7 +50,6 @@ export default function Home() {
           <ExperienceMB />
           <Projects />
           <Contact />
-          <Social />
         </section>
       )}
     </>
