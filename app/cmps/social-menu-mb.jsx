@@ -1,7 +1,7 @@
 'use client'
 
 import { social } from "../data/data";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ButtonCmp } from './button-cmp'
 
 export function Social_MB() {
@@ -12,10 +12,28 @@ export function Social_MB() {
         setShowIcons(!showIcons);
     };
 
+    const closeMenu = () => {
+        setShowIcons(false);
+    };
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (showIcons) {
+                closeMenu();
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [showIcons]);
+
     return (
         <>
             <section className="social-mb">
-                <ButtonCmp className="fab" onClick={toggleIcons} >+</ButtonCmp>
+                <ButtonCmp className="fab" onClick={toggleIcons}>+</ButtonCmp>
                 {showIcons && (
                     <ul className="social-icons">
                         {social.map((icon, idx) => {
