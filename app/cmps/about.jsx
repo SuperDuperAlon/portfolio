@@ -12,14 +12,7 @@ export function About() {
     <section ref={ref} className="section-layout" id="about">
       <div>
         <div className="about-section">
-          <p
-            style={{
-              opacity: isInView ? 1 : 0,
-              transition: "all 0.9s 0.5s",
-            }}
-          >
-            A people professional, with an extensive background in politics (national and local), public relations, and marketing, turned Software Developer (with more than 480k lines of code on Github). Looking for a Full Stack or Front End development role
-          </p>
+
           <div className="img-container"
             style={{
               opacity: isInView ? 1 : 0,
@@ -32,7 +25,15 @@ export function About() {
               className="about-img"
               alt="about-me-photo"
             />
-          </div>  
+          </div>
+          <p
+            style={{
+              opacity: isInView ? 1 : 0,
+              transition: "all 0.9s 0.5s",
+            }}
+          >
+            A people professional, with an extensive background in politics (national and local), public relations, and marketing, turned Software Developer (with more than 480k lines of code on Github). Looking for a Full Stack or Front End development role
+          </p>
           {/* <p
             style={{
               opacity: isInView ? 1 : 0,
