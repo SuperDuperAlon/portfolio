@@ -38,7 +38,7 @@ export function Intro() {
         </motion.p>
         <div className="mar-t48">
           <a
-            href="../../public/assets/Alon_Mlievski_CV.pdf"
+            href="/public/assets/alon_mlievski_cv.pdf"
             download
           >
             <motion.button
